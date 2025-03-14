@@ -18,7 +18,7 @@ import { User } from "@/types/user";
 import { signOut } from "next-auth/react";
 import { useTranslations } from "next-intl";
 
-export default function ({ user }: { user: User }) {
+export default function SignUser({ user }: { user: User }) {
   const t = useTranslations();
 
   return (

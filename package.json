@@ -12,7 +12,8 @@
     "analyze": "ANALYZE=true pnpm build",
     "cf:build": "npx @cloudflare/next-on-pages",
     "cf:preview": "pnpm cf:build && wrangler pages dev",
-    "cf:deploy": "pnpm cf:build && wrangler pages deploy"
+    "cf:deploy": "pnpm cf:build && wrangler pages deploy",
+    "docker:build": "docker build -f Dockerfile -t shipany-template-one:latest ."
   },
   "dependencies": {
     "@ai-sdk/deepseek": "^0.1.11",
@@ -50,6 +51,7 @@
     "@supabase/supabase-js": "^2.47.10",
     "@types/canvas-confetti": "^1.9.0",
     "@types/mdx": "^2.0.13",
+    "@uiw/react-md-editor": "^4.0.5",
     "ai": "^4.1.42",
     "canvas-confetti": "^1.9.3",
     "class-variance-authority": "^0.7.1",
