@@ -3,7 +3,7 @@
 import { headers } from "next/headers";
 
 export async function getClientIp() {
-  const h = headers();
+  const h = await headers();
 
   const ip =
     h.get("cf-connecting-ip") || // Cloudflare IP

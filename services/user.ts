@@ -37,7 +37,7 @@ export async function saveUser(user: User) {
 export async function getUserUuid() {
   let user_uuid = "";
 
-  const token = getBearerToken();
+  const token = await getBearerToken();
 
   if (token) {
     // api key
@@ -56,8 +56,8 @@ export async function getUserUuid() {
   return user_uuid;
 }
 
-export function getBearerToken() {
-  const h = headers();
+export async function getBearerToken() {
+  const h = await headers();
   const auth = h.get("Authorization");
   if (!auth) {
     return "";

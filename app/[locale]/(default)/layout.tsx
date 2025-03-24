@@ -5,11 +5,12 @@ import { getLandingPage } from "@/services/page";
 
 export default async function DefaultLayout({
   children,
-  params: { locale },
+  params,
 }: {
   children: ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
   const page = await getLandingPage(locale);
 
   return (

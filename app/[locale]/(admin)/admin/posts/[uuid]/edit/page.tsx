@@ -13,15 +13,19 @@ import { Form as FormSlotType } from "@/types/slots/form";
 import { Post } from "@/types/post";
 import { getIsoTimestr } from "@/lib/time";
 import { getUserInfo } from "@/services/user";
-import { getUuid } from "@/lib/hash";
 
-export default async function ({ params }: { params: { uuid: string } }) {
+export default async function ({
+  params,
+}: {
+  params: Promise<{ uuid: string }>;
+}) {
+  const { uuid } = await params;
   const user = await getUserInfo();
   if (!user || !user.uuid) {
     return <Empty message="no auth" />;
   }
 
-  const post = await findPostByUuid(params.uuid);
+  const post = await findPostByUuid(uuid);
   if (!post) {
     return <Empty message="post not found" />;
   }

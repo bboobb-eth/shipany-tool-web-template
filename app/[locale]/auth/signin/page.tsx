@@ -5,11 +5,12 @@ import { redirect } from "next/navigation";
 export default async function SignInPage({
   searchParams,
 }: {
-  searchParams: { callbackUrl: string | undefined };
+  searchParams: Promise<{ callbackUrl: string | undefined }>;
 }) {
+  const { callbackUrl } = await searchParams;
   const session = await auth();
   if (session) {
-    return redirect(searchParams.callbackUrl || "/");
+    return redirect(callbackUrl || "/");
   }
 
   return (
