@@ -83,7 +83,11 @@
   "blog": {
     "title": "Blog",
     "description": "News, resources, and updates about ShipAny",
-    "read_more_text": "Read More"
+    "read_more_text": "Read More",
+    "back_to_list": "Back to Blog",
+    "back": "Back",
+    "anonymous": "Anonymous",
+    "recently_published": "Recently published"
   },
   "my_invites": {
     "title": "My Invites",

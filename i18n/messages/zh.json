@@ -83,7 +83,11 @@
   "blog": {
     "title": "博客",
     "description": "关于 ShipAny 的新闻、资源和更新",
-    "read_more_text": "阅读更多"
+    "read_more_text": "阅读更多",
+    "back_to_list": "返回博客列表",
+    "back": "返回",
+    "anonymous": "匿名用户",
+    "recently_published": "最近发布"
   },
   "my_invites": {
     "title": "我的邀请",

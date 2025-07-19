@@ -1,0 +1,169 @@
+---
+title: "Getting Started with ShipAny"
+description: "Learn how to quickly set up and deploy your AI SaaS application using ShipAny template"
+author: "ShipAny Team"
+author_avatar: "/avatars/team.jpg"
+cover_image: "/blog/getting-started.jpg"
+slug: "getting-started"
+status: "online"
+tags: ["tutorial", "getting-started", "ai", "saas"]
+created_at: "2024-01-15T10:00:00Z"
+---
+
+# Getting Started with ShipAny
+
+Welcome to ShipAny! This comprehensive guide will help you get up and running with your AI SaaS application in just a few hours.
+
+## What is ShipAny?
+
+ShipAny is a modern Next.js boilerplate designed specifically for building AI-powered SaaS applications. It comes with everything you need:
+
+- 🚀 **Fast Setup**: Get your app running in minutes
+- 🎨 **Modern UI**: Beautiful, responsive design with Tailwind CSS
+- 🔐 **Authentication**: Complete auth system with multiple providers
+- 💳 **Payments**: Stripe integration for subscriptions and one-time payments
+- 🤖 **AI Integration**: Ready-to-use AI SDK with multiple providers
+- 🌍 **Internationalization**: Multi-language support out of the box
+
+## Quick Start
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/shipanyai/shipany-template-one.git
+cd shipany-template-one
+```
+
+### 2. Install Dependencies
+
+```bash
+pnpm install
+```
+
+### 3. Set Up Environment Variables
+
+```bash
+cp .env.example .env.local
+```
+
+Edit your `.env.local` file with your configuration:
+
+```env
+# Database
+SUPABASE_URL=your_supabase_url
+SUPABASE_ANON_KEY=your_supabase_anon_key
+
+# Authentication
+AUTH_SECRET=your_auth_secret
+AUTH_GOOGLE_ID=your_google_client_id
+AUTH_GOOGLE_SECRET=your_google_client_secret
+
+# Payments
+STRIPE_PUBLIC_KEY=your_stripe_public_key
+STRIPE_PRIVATE_KEY=your_stripe_private_key
+```
+
+### 4. Set Up Database
+
+Run the SQL script to create the necessary tables:
+
+```sql
+-- Run the contents of data/install.sql in your Supabase dashboard
+```
+
+### 5. Start Development Server
+
+```bash
+pnpm dev
+```
+
+Your application will be available at `http://localhost:3000`.
+
+## Key Features
+
+### Authentication System
+
+ShipAny supports multiple authentication providers:
+
+- **Google OAuth**: Easy social login
+- **GitHub OAuth**: Developer-friendly authentication
+- **Google One Tap**: Seamless sign-in experience
+
+### Payment Integration
+
+Built-in Stripe integration supports:
+
+- One-time payments
+- Subscription billing
+- Credit-based systems
+- Affiliate rewards
+
+### AI Capabilities
+
+Integrated AI SDK supports multiple providers:
+
+- OpenAI
+- DeepSeek
+- OpenRouter
+- SiliconFlow
+- Replicate (for image/video generation)
+
+## Customization
+
+### Theming
+
+Customize your app's appearance by editing `app/theme.css`. Use the [shadcn/ui theme generator](https://zippystarter.com/tools/shadcn-ui-theme-generator) for easy color scheme creation.
+
+### Content Management
+
+Update your landing page content in `i18n/pages/landing/` for different languages.
+
+### Internationalization
+
+Add new languages by:
+
+1. Creating message files in `i18n/messages/`
+2. Adding page content in `i18n/pages/`
+3. Updating the locale configuration
+
+## Deployment
+
+### Vercel (Recommended)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fshipanyai%2Fshipany-template-one)
+
+### Cloudflare Pages
+
+```bash
+# Configure environment variables
+cp .env.example .env.production
+cp wrangler.toml.example wrangler.toml
+
+# Deploy
+npm run cf:deploy
+```
+
+### Docker
+
+```bash
+docker build -f Dockerfile -t my-shipany-app .
+docker run -p 3000:3000 my-shipany-app
+```
+
+## Next Steps
+
+Now that you have ShipAny running, here are some recommended next steps:
+
+1. **Customize the Landing Page**: Update the content to match your product
+2. **Set Up AI Features**: Configure your AI providers and implement your core features
+3. **Configure Payments**: Set up your Stripe products and pricing
+4. **Add Content**: Create blog posts and documentation
+5. **Deploy**: Choose your deployment platform and go live
+
+## Getting Help
+
+- 📚 [Documentation](https://docs.shipany.ai)
+- 💬 [Discord Community](https://discord.gg/HQNnrzjZQS)
+- 🐛 [GitHub Issues](https://github.com/shipanyai/shipany-template-one/issues)
+
+Welcome to the ShipAny community! We're excited to see what you'll build.

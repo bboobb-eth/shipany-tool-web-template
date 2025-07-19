@@ -1,7 +1,16 @@
-import { PostStatus, findPostBySlug } from "@/models/post";
-
+import { getPostBySlug, getAllPostSlugs } from "@/lib/mdx-utils";
 import BlogDetail from "@/components/blocks/blog-detail";
 import Empty from "@/components/blocks/empty";
+import { notFound } from "next/navigation";
+
+// 生成静态参数（SSG）
+export async function generateStaticParams() {
+  const slugs = await getAllPostSlugs();
+  return slugs.map(({ slug, locale }) => ({
+    locale,
+    slug,
+  }));
+}
 
 export async function generateMetadata({
   params,
@@ -9,8 +18,13 @@ export async function generateMetadata({
   params: Promise<{ locale: string; slug: string }>;
 }) {
   const { locale, slug } = await params;
+  const post = await getPostBySlug(slug, locale);
 
-  const post = await findPostBySlug(slug, locale);
+  if (!post) {
+    return {
+      title: "Post not found",
+    };
+  }
 
   let canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/posts/${slug}`;
 
@@ -19,25 +33,41 @@ export async function generateMetadata({
   }
 
   return {
-    title: post?.title,
-    description: post?.description,
+    title: post.title,
+    description: post.description || post.excerpt,
     alternates: {
       canonical: canonicalUrl,
     },
   };
 }
 
-export default async function ({
+export default async function BlogPostPage({
   params,
 }: {
   params: Promise<{ locale: string; slug: string }>;
 }) {
   const { locale, slug } = await params;
-  const post = await findPostBySlug(slug, locale);
+  const post = await getPostBySlug(slug, locale);
 
-  if (!post || post.status !== PostStatus.Online) {
-    return <Empty message="Post not found" />;
+  if (!post) {
+    notFound();
   }
 
-  return <BlogDetail post={post} />;
+  // 转换为原有的 Post 格式
+  const postData = {
+    uuid: post.slug,
+    slug: post.slug,
+    title: post.title,
+    description: post.description,
+    content: post.content,
+    created_at: post.created_at,
+    updated_at: post.updated_at,
+    status: post.status,
+    cover_url: post.cover_image,
+    author_name: post.author,
+    author_avatar_url: post.author_avatar,
+    locale: post.locale,
+  };
+
+  return <BlogDetail post={postData} />;
 }

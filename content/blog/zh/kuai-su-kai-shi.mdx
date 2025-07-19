@@ -1,0 +1,169 @@
+---
+title: "ShipAny 快速开始指南"
+description: "学习如何使用 ShipAny 模板快速搭建和部署您的 AI SaaS 应用程序"
+author: "ShipAny 团队"
+author_avatar: "/avatars/team.jpg"
+cover_image: "/blog/getting-started-zh.jpg"
+slug: "kuai-su-kai-shi"
+status: "online"
+tags: ["教程", "快速开始", "人工智能", "SaaS"]
+created_at: "2024-01-15T10:00:00Z"
+---
+
+# ShipAny 快速开始指南
+
+欢迎使用 ShipAny！这份详细指南将帮助您在几小时内快速搭建并运行您的 AI SaaS 应用程序。
+
+## 什么是 ShipAny？
+
+ShipAny 是一个专为构建 AI 驱动的 SaaS 应用程序而设计的现代化 Next.js 样板。它包含了您需要的一切：
+
+- 🚀 **快速搭建**：几分钟内让您的应用运行起来
+- 🎨 **现代化 UI**：使用 Tailwind CSS 的美观响应式设计
+- 🔐 **身份认证**：支持多种提供商的完整认证系统
+- 💳 **支付系统**：集成 Stripe 的订阅和一次性支付
+- 🤖 **AI 集成**：支持多个提供商的即用型 AI SDK
+- 🌍 **国际化**：开箱即用的多语言支持
+
+## 快速开始
+
+### 1. 克隆仓库
+
+```bash
+git clone https://github.com/shipanyai/shipany-template-one.git
+cd shipany-template-one
+```
+
+### 2. 安装依赖
+
+```bash
+pnpm install
+```
+
+### 3. 设置环境变量
+
+```bash
+cp .env.example .env.local
+```
+
+编辑您的 `.env.local` 文件，填入您的配置：
+
+```env
+# 数据库
+SUPABASE_URL=your_supabase_url
+SUPABASE_ANON_KEY=your_supabase_anon_key
+
+# 身份认证
+AUTH_SECRET=your_auth_secret
+AUTH_GOOGLE_ID=your_google_client_id
+AUTH_GOOGLE_SECRET=your_google_client_secret
+
+# 支付
+STRIPE_PUBLIC_KEY=your_stripe_public_key
+STRIPE_PRIVATE_KEY=your_stripe_private_key
+```
+
+### 4. 设置数据库
+
+在您的 Supabase 控制台中运行 SQL 脚本来创建必要的表：
+
+```sql
+-- 在 Supabase 控制台中运行 data/install.sql 的内容
+```
+
+### 5. 启动开发服务器
+
+```bash
+pnpm dev
+```
+
+您的应用程序将在 `http://localhost:3000` 上运行。
+
+## 核心功能
+
+### 身份认证系统
+
+ShipAny 支持多种身份认证提供商：
+
+- **Google OAuth**：便捷的社交登录
+- **GitHub OAuth**：开发者友好的身份认证
+- **Google One Tap**：无缝登录体验
+
+### 支付集成
+
+内置的 Stripe 集成支持：
+
+- 一次性支付
+- 订阅计费
+- 基于积分的系统
+- 推荐奖励
+
+### AI 能力
+
+集成的 AI SDK 支持多个提供商：
+
+- OpenAI
+- DeepSeek
+- OpenRouter
+- SiliconFlow
+- Replicate（用于图像/视频生成）
+
+## 自定义配置
+
+### 主题设置
+
+通过编辑 `app/theme.css` 来自定义应用程序的外观。使用 [shadcn/ui 主题生成器](https://zippystarter.com/tools/shadcn-ui-theme-generator) 可以轻松创建配色方案。
+
+### 内容管理
+
+在 `i18n/pages/landing/` 中更新不同语言的落地页内容。
+
+### 国际化
+
+添加新语言的步骤：
+
+1. 在 `i18n/messages/` 中创建消息文件
+2. 在 `i18n/pages/` 中添加页面内容
+3. 更新语言配置
+
+## 部署
+
+### Vercel（推荐）
+
+[![使用 Vercel 部署](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fshipanyai%2Fshipany-template-one)
+
+### Cloudflare Pages
+
+```bash
+# 配置环境变量
+cp .env.example .env.production
+cp wrangler.toml.example wrangler.toml
+
+# 部署
+npm run cf:deploy
+```
+
+### Docker
+
+```bash
+docker build -f Dockerfile -t my-shipany-app .
+docker run -p 3000:3000 my-shipany-app
+```
+
+## 下一步
+
+现在您已经让 ShipAny 运行起来了，以下是一些建议的后续步骤：
+
+1. **自定义落地页**：更新内容以匹配您的产品
+2. **设置 AI 功能**：配置您的 AI 提供商并实现核心功能
+3. **配置支付**：设置您的 Stripe 产品和定价
+4. **添加内容**：创建博客文章和文档
+5. **部署**：选择您的部署平台并上线
+
+## 获取帮助
+
+- 📚 [文档](https://docs.shipany.ai)
+- 💬 [Discord 社区](https://discord.gg/HQNnrzjZQS)
+- 🐛 [GitHub Issues](https://github.com/shipanyai/shipany-template-one/issues)
+
+欢迎加入 ShipAny 社区！我们很期待看到您将构建什么样的产品。

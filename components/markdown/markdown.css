@@ -1,15 +1,67 @@
+.markdown-content {
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
 .markdown {
   background-color: var(--background);
   color: var(--foreground);
-  li {
-    list-style-type: square;
-    word-break: break-word;
-  }
+}
+
+.markdown li {
+  list-style-type: disc;
+  word-break: break-word;
+  margin-bottom: 0.5rem;
 }
 
 .markdown pre,
 .markdown code,
 .markdown blockquote {
-  background-color: var(--background);
+  background-color: var(--muted);
   color: var(--foreground);
+}
+
+.markdown pre {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.markdown code {
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-size: 0.9em;
+}
+
+.markdown blockquote {
+  border-left: 4px solid var(--primary);
+  padding-left: 1rem;
+  margin: 1rem 0;
+  font-style: italic;
+}
+
+.markdown img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+.markdown table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.markdown th,
+.markdown td {
+  border: 1px solid var(--border);
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+
+.markdown th {
+  background-color: var(--muted);
+  font-weight: 600;
 }

@@ -1,47 +1,77 @@
 "use client";
 
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
-
-import Crumb from "./crumb";
 import Markdown from "@/components/markdown";
 import { Post } from "@/types/post";
 import moment from "moment";
-import { Card } from "@/components/ui/card";
+import BackButton from "@/components/back-button";
+import { SVGAvatar } from "@/components/avatar-generator";
+import { useTranslations } from "next-intl";
 
 export default function BlogDetail({ post }: { post: Post }) {
-  return (
-    <section className="py-16">
-      <div className="container">
-        <Crumb post={post} />
-        <h1 className="mb-7 mt-9 max-w-3xl text-2xl font-bold md:mb-10 md:text-4xl">
-          {post.title}
-        </h1>
-        <div className="flex items-center gap-3 text-sm md:text-base bg-background">
-          {post.author_avatar_url && (
-            <Avatar className="h-8 w-8 border">
-              <AvatarImage
-                src={post.author_avatar_url}
-                alt={post.author_name}
-              />
-            </Avatar>
-          )}
-          <div>
-            {post.author_name && (
-              <span className="font-medium">{post.author_name}</span>
-            )}
+  const t = useTranslations('blog');
 
-            <span className="ml-2 text-muted-foreground">
-              on {post.created_at && moment(post.created_at).fromNow()}
-            </span>
+  // 构建返回URL
+  const backUrl = post.locale === 'en' ? '/en/posts' : `/${post.locale}/posts`;
+
+  return (
+    <section className="py-8 md:py-16">
+      <div className="container max-w-4xl mx-auto px-4">
+        {/* 返回按钮 */}
+        <div className="mb-8">
+          <BackButton fallbackUrl={backUrl}>
+            {t('back_to_list')}
+          </BackButton>
+        </div>
+
+        {/* 文章标题 */}
+        <div className="text-center mb-12">
+          <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl mb-8 leading-tight">
+            {post.title}
+          </h1>
+
+          {/* 作者信息 */}
+          <div className="flex items-center justify-center gap-4 text-sm md:text-base">
+            {/* 使用随机生成的SVG头像 */}
+            <SVGAvatar
+              name={post.author_name || 'Anonymous'}
+              size={48}
+              className="border-2 border-border"
+            />
+            <div className="text-left">
+              <div className="font-semibold text-foreground">
+                {post.author_name || t('anonymous')}
+              </div>
+              <div className="text-muted-foreground">
+                {post.created_at
+                  ? moment(post.created_at).format('MMMM DD, YYYY')
+                  : t('recently_published')
+                }
+              </div>
+            </div>
           </div>
         </div>
-        <div className="relative py-8 grid max-w-(--breakpoint-xl) gap-4 lg:mt-0 lg:grid lg:grid-cols-12 lg:gap-6">
-          {post.content && (
-            <Card className="order-2 lg:order-none lg:col-span-8 px-4">
-              <Markdown content={post.content} />
-            </Card>
-          )}
-          <div className="order-1 flex h-fit flex-col text-sm lg:sticky lg:top-8 lg:order-none lg:col-span-3 lg:col-start-10 lg:text-xs"></div>
+
+        {/* 封面图片 */}
+        {post.cover_url && (
+          <div className="mb-12">
+            <img
+              src={post.cover_url}
+              alt={post.title || ''}
+              className="w-full h-64 md:h-96 object-cover rounded-xl shadow-lg"
+            />
+          </div>
+        )}
+
+        {/* 文章内容 */}
+        <div className="prose prose-lg prose-gray max-w-none dark:prose-invert">
+          {post.content && <Markdown content={post.content} />}
+        </div>
+
+        {/* 底部返回按钮 */}
+        <div className="mt-12 pt-8 border-t border-border">
+          <BackButton fallbackUrl={backUrl} className="mx-auto">
+            {t('back_to_list')}
+          </BackButton>
         </div>
       </div>
     </section>
