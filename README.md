@@ -40,6 +40,23 @@ cp .env.example .env.local
 
 - Set your i18n messages in `i18n/messages`
 
+## Analytics
+
+The template supports multiple analytics providers:
+
+- **Google Analytics**: Traditional web analytics
+- **OpenPanel**: Privacy-focused analytics
+- **Plausible**: Simple and privacy-friendly
+- **Umami**: Open-source, privacy-first analytics
+
+Configure in your `.env.local`:
+
+```env
+# Umami Analytics (recommended for privacy)
+NEXT_PUBLIC_UMAMI_WEBSITE_ID="your-website-id"
+NEXT_PUBLIC_UMAMI_SCRIPT_URL="https://cloud.umami.is/script.js"
+```
+
 ## Deploy
 
 - Deploy to Vercel

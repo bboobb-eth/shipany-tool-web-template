@@ -6,12 +6,21 @@ import moment from "moment";
 import BackButton from "@/components/back-button";
 import { SVGAvatar } from "@/components/avatar-generator";
 import { useTranslations } from "next-intl";
+import { umamiEvents } from "@/components/analytics/umami";
+import { useEffect } from "react";
 
 export default function BlogDetail({ post }: { post: Post }) {
   const t = useTranslations('blog');
 
   // 构建返回URL
   const backUrl = post.locale === 'en' ? '/en/posts' : `/${post.locale}/posts`;
+
+  // 追踪博客阅读事件
+  useEffect(() => {
+    if (post.slug && post.locale) {
+      umamiEvents.readBlogPost(post.slug, post.locale);
+    }
+  }, [post.slug, post.locale]);
 
   return (
     <section className="py-8 md:py-16">
