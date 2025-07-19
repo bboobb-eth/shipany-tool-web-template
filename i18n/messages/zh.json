@@ -89,6 +89,14 @@
     "anonymous": "匿名用户",
     "recently_published": "最近发布"
   },
+  "common": {
+    "no_media_available": "暂无媒体内容",
+    "play_video": "播放视频",
+    "pause_video": "暂停视频",
+    "mute_video": "静音",
+    "unmute_video": "取消静音",
+    "video_not_supported": "您的浏览器不支持视频播放"
+  },
   "my_invites": {
     "title": "我的邀请",
     "description": "查看您的邀请记录",

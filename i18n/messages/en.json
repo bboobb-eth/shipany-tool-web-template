@@ -89,6 +89,14 @@
     "anonymous": "Anonymous",
     "recently_published": "Recently published"
   },
+  "common": {
+    "no_media_available": "No media available",
+    "play_video": "Play video",
+    "pause_video": "Pause video",
+    "mute_video": "Mute video",
+    "unmute_video": "Unmute video",
+    "video_not_supported": "Your browser does not support video playback"
+  },
   "my_invites": {
     "title": "My Invites",
     "description": "View your invite records",
