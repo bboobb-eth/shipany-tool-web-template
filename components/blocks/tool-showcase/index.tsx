@@ -206,7 +206,7 @@ export default function ToolShowcase({ toolShowcase }: { toolShowcase: ToolShowc
                           {button.icon && (
                             <Icon name={button.icon} className="mr-2 h-4 w-4" />
                           )}
-                          {button.text}
+                          {button.title}
                         </a>
                       </Button>
                     ))}
@@ -221,7 +221,7 @@ export default function ToolShowcase({ toolShowcase }: { toolShowcase: ToolShowc
                     <div className="aspect-video">
                       {item.video ? (
                         <VideoPlayer video={item.video} />
-                      ) : item.image ? (
+                      ) : item.image?.src ? (
                         <div className="relative w-full h-full">
                           <Image
                             src={item.image.src}

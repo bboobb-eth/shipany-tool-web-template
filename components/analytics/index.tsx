@@ -1,6 +1,3 @@
-import GoogleAnalytics from "./google-analytics";
-import OpenPanelAnalytics from "./open-panel";
-import Plausible from "./plausible";
 import UmamiAnalytics from "./umami";
 
 export default function Analytics() {
@@ -10,9 +7,6 @@ export default function Analytics() {
 
   return (
     <>
-      <OpenPanelAnalytics />
-      <GoogleAnalytics />
-      <Plausible />
       <UmamiAnalytics />
     </>
   );

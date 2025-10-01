@@ -58,11 +58,11 @@ export default async function ({
         name: "slug",
         title: "Slug",
         type: "text",
-        placeholder: "what-is-shipany",
+        placeholder: "humtosong-product-update",
         validation: {
           required: true,
         },
-        tip: "post slug should be unique, visit like: /blog/what-is-shipany",
+        tip: "Slug 必须唯一，例如：/blog/humtosong-product-update",
       },
       {
         name: "locale",

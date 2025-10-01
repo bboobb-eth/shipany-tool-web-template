@@ -1,63 +1,70 @@
 {
-  "template": "shipany-template-one",
+  "template": "humtosong-template-one",
   "theme": "light",
   "header": {
     "brand": {
-      "title": "ShipAny",
+      "title": "HumToSong",
       "logo": {
-        "src": "/logo.png",
-        "alt": "ShipAny"
+        "src": "/humtosong/logo.svg",
+        "alt": "HumToSong"
       },
       "url": "/"
     },
     "nav": {
       "items": [
         {
-          "title": "Features",
-          "url": "/#feature",
+          "title": "How It Works",
+          "url": "#usage",
           "icon": "RiSparkling2Line"
         },
         {
-          "title": "Pricing",
-          "url": "/pricing",
-          "icon": "RiMoneyDollarCircleLine"
+          "title": "Features",
+          "url": "#feature",
+          "icon": "RiMusic2Fill"
         },
         {
-          "title": "Showcase",
-          "url": "/showcase",
-          "icon": "RiApps2Line"
+          "title": "API",
+          "url": "#cta",
+          "icon": "RiTerminalFill"
         }
       ]
     },
     "buttons": [
+      {
+        "title": "Try Demo",
+        "icon": "RiPlayFill",
+        "url": "#demo",
+        "target": "_self",
+        "variant": "default"
+      }
     ],
     "show_sign": false,
     "show_theme": true,
     "show_locale": true
   },
   "hero": {
-    "title": "Ship Any AI Startups in hours, not days",
-    "highlight_text": "Ship Any",
-    "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups.<br/>Ship Fast with a variety of templates and components.",
+    "title": "Hum to any tune, get the song instantly",
+    "highlight_text": "HumToSong",
+    "description": "HumToSong turns humming, whistling, or short clips into accurate song matches powered by ACRCloud and our latency tuned pipeline.",
     "announcement": {
-      "label": "2025",
-      "title": "🎉 Happy New Year",
-      "url": "/#pricing"
+      "label": "MVP",
+      "title": "🎧 Early access for creators",
+      "url": "#cta"
     },
-    "tip": "🎁 50% off before 2025",
+    "tip": "Supports vocal, humming and live recordings",
     "buttons": [
       {
-        "title": "Get Started",
-        "icon": "RiFlashlightFill",
-        "url": "/#pricing",
+        "title": "Start Matching",
+        "icon": "RiMicFill",
+        "url": "#usage",
         "target": "_self",
         "variant": "default"
       },
       {
-        "title": "Join Discord",
-        "icon": "RiDiscordFill",
-        "url": "https://discord.gg/HQNnrzjZQS",
-        "target": "_blank",
+        "title": "View API",
+        "icon": "RiCodeBoxFill",
+        "url": "#cta",
+        "target": "_self",
         "variant": "outline"
       }
     ],
@@ -65,8 +72,15 @@
     "show_badge": false
   },
   "branding": {
-    "title": "ShipAny is built on the shoulders of giants",
+    "title": "Built with proven infrastructure",
     "items": [
+      {
+        "title": "ACRCloud",
+        "image": {
+          "src": "/imgs/logos/vercel.svg",
+          "alt": "ACRCloud"
+        }
+      },
       {
         "title": "Next.js",
         "image": {
@@ -82,80 +96,73 @@
         }
       },
       {
-        "title": "TailwindCSS",
+        "title": "Supabase",
+        "image": {
+          "src": "/imgs/logos/supabase.svg",
+          "alt": "Supabase"
+        }
+      },
+      {
+        "title": "Tailwind",
         "image": {
           "src": "/imgs/logos/tailwindcss.svg",
-          "alt": "TailwindCSS"
-        }
-      },
-      {
-        "title": "Shadcn/UI",
-        "image": {
-          "src": "/imgs/logos/shadcn.svg",
-          "alt": "Shadcn/UI"
-        }
-      },
-      {
-        "title": "Vercel",
-        "image": {
-          "src": "/imgs/logos/vercel.svg",
-          "alt": "Vercel"
+          "alt": "Tailwind"
         }
       }
     ]
   },
   "introduce": {
     "name": "introduce",
-    "title": "What is ShipAny",
-    "label": "Introduce",
-    "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups. Built in a variety of templates and components.",
+    "title": "What is HumToSong",
+    "label": "Overview",
+    "description": "HumToSong connects your melody to the original track in seconds. Upload a snippet or hum into the mic and receive precise matches with metadata, lyrics and streaming links.",
     "image": {
       "src": "/imgs/features/1.png"
     },
     "items": [
       {
-        "title": "Ready-to-use Templates",
-        "description": "Choose from dozens of production-ready AI SaaS templates to quickly start your project.",
-        "icon": "RiNextjsFill"
+        "title": "Creator friendly",
+        "description": "Designed for content creators, music lovers and support teams who need fast song identification.",
+        "icon": "RiUserVoiceFill"
       },
       {
-        "title": "Infrastructure Setup",
-        "description": "Get instant access to scalable infrastructure with best practices built-in.",
-        "icon": "RiDatabase2Line"
+        "title": "ACRCloud powered",
+        "description": "Native integration with ACRCloud ensures industry-grade recognition accuracy across global catalogs.",
+        "icon": "RiSoundModuleFill"
       },
       {
-        "title": "Quick Deployment",
-        "description": "Deploy your AI SaaS application to production in hours, not days.",
-        "icon": "RiCloudyFill"
+        "title": "Realtime handoff",
+        "description": "Stream results to your product via webhooks or SDKs with latency under 1.5 seconds.",
+        "icon": "RiTimerFlashFill"
       }
     ]
   },
   "benefit": {
     "name": "benefit",
-    "title": "Why Choose ShipAny",
     "label": "Benefits",
-    "description": "Get everything you need to launch your AI startup - from ready-to-use templates to technical support.",
+    "title": "Why teams choose HumToSong",
+    "description": "Give your users an effortless way to find any song they hum.",
     "items": [
       {
-        "title": "Complete Framework",
-        "description": "Built on Next.js with authentication, payments, and AI integration - everything works out of the box.",
-        "icon": "RiNextjsFill",
+        "title": "High accuracy",
+        "description": "Hybrid fingerprinting catches the right track even with noisy backgrounds.",
+        "icon": "RiMusicFill",
         "image": {
           "src": "/imgs/features/2.png"
         }
       },
       {
-        "title": "Rich Templates Library",
-        "description": "Choose from various AI SaaS templates to kickstart your project - chatbots, image generation, and more.",
-        "icon": "RiClapperboardAiLine",
+        "title": "Fast integration",
+        "description": "RESTful API and TypeScript SDKs drop into existing Next.js or mobile stacks.",
+        "icon": "RiCodeSSlashLine",
         "image": {
           "src": "/imgs/features/3.png"
         }
       },
       {
-        "title": "Technical Guidance",
-        "description": "Get dedicated support and join our developer community to ensure your successful launch.",
-        "icon": "RiCodeFill",
+        "title": "Actionable metadata",
+        "description": "Return ISRC, artists, streaming links and user-ready cover art in one call.",
+        "icon": "RiAlbumFill",
         "image": {
           "src": "/imgs/features/4.png"
         }
@@ -164,158 +171,134 @@
   },
   "usage": {
     "name": "usage",
-    "title": "How to Launch with ShipAny",
-    "description": "Get your AI SaaS startup running in three simple steps:",
-    "image": {
-      "src": "/imgs/features/1.png"
-    },
-    "image_position": "left",
+    "title": "How HumToSong works",
+    "description": "Launch in three simple steps",
     "text_align": "center",
+    "image_position": "left",
+    "image": {
+      "src": "/imgs/features/5.png"
+    },
     "items": [
       {
-        "title": "Get ShipAny",
-        "description": "Buy ShipAny with a one-time payment. Check your email for the code and documentation.",
-        "image": {
-          "src": "/imgs/features/5.png"
-        }
-      },
-      {
-        "title": "Start Your Project",
-        "description": "Read the documentation and clone the code of ShipAny. Start building your AI SaaS startup.",
+        "title": "Capture audio",
+        "description": "Upload a file or record 5–15 seconds of humming in the browser.",
         "image": {
           "src": "/imgs/features/6.png"
         }
       },
       {
-        "title": "Customize Your Project",
-        "description": "Modify the template with your data and contents. Specific AI functionality needs.",
+        "title": "Match in the cloud",
+        "description": "HumToSong forwards the snippet to ACRCloud and merges enriched metadata.",
         "image": {
           "src": "/imgs/features/7.png"
         }
       },
       {
-        "title": "Deploy to Production",
-        "description": "Deploy your project to production with a few steps and start serving customers immediately.",
+        "title": "Deliver results",
+        "description": "Receive ranked matches, confidence scores and links that plug into your app.",
         "image": {
           "src": "/imgs/features/8.png"
+        }
+      },
+      {
+        "title": "Measure impact",
+        "description": "Analyze recognition stats and feedback inside the HumToSong dashboard.",
+        "image": {
+          "src": "/imgs/features/9.png"
         }
       }
     ]
   },
   "feature": {
     "name": "feature",
-    "title": "Key Features of ShipAny",
-    "description": "Everything you need to launch your AI SaaS startup quickly and efficiently.",
+    "title": "Key capabilities",
+    "description": "Everything you need to build humming-first experiences.",
     "items": [
       {
-        "title": "Next.js Boilerplate",
-        "description": "Production-ready Next.js templates with SEO-friendly structure and i18n support.",
-        "icon": "RiNextjsFill"
+        "title": "Cross-device capture",
+        "description": "Optimized recording widgets for web, iOS and Android.",
+        "icon": "RiDeviceLine"
       },
       {
-        "title": "Authentication & Payments",
-        "description": "Integrated Google OAuth, one-tap login, and Stripe payment processing.",
-        "icon": "RiKey2Fill"
+        "title": "Confidence scoring",
+        "description": "Receive ordered matches with probability to power smart UX.",
+        "icon": "RiSpeedLine"
       },
       {
-        "title": "Data Infrastructure",
-        "description": "Built-in Supabase integration for reliable and scalable data storage.",
-        "icon": "RiDatabase2Line"
+        "title": "Lyrics enrichment",
+        "description": "Optional lyric snippets and translations for fast content sourcing.",
+        "icon": "RiFileMusicFill"
       },
       {
-        "title": "One-Click Deployment",
-        "description": "Seamless deployment to Vercel or Cloudflare with automated setup.",
-        "icon": "RiCloudy2Fill"
+        "title": "Multilingual support",
+        "description": "UI copy available in English and Chinese out of the box.",
+        "icon": "RiTranslate2"
       },
       {
-        "title": "Business Analytics",
-        "description": "Integrated Google Analytics and Search Console for tracking growth.",
-        "icon": "RiBarChart2Line"
+        "title": "Event webhooks",
+        "description": "Notify your backend when a match is found or requires review.",
+        "icon": "RiNotification3Fill"
       },
       {
-        "title": "AI-Ready Infrastructure",
-        "description": "Pre-configured AI integration with built-in credits system and API sales.",
-        "icon": "RiRobot2Line"
+        "title": "Usage analytics",
+        "description": "Track recognition volume, success rate and unresolved queries.",
+        "icon": "RiLineChartFill"
       }
     ]
   },
   "stats": {
     "name": "stats",
     "label": "Stats",
-    "title": "People Love ShipAny",
-    "description": "for it's easy to use and fast to ship.",
+    "title": "HumToSong by the numbers",
+    "description": "Fast, reliable and ready for production.",
     "icon": "FaRegHeart",
     "items": [
       {
-        "title": "Trusted by",
-        "label": "99+",
-        "description": "Customers"
+        "title": "Matches served",
+        "label": "10k+",
+        "description": "Across beta integrations"
       },
       {
-        "title": "Built in",
-        "label": "20+",
-        "description": "Components"
+        "title": "Median latency",
+        "label": "1.2s",
+        "description": "From upload to result"
       },
       {
-        "title": "Ship Fast in",
-        "label": "5",
-        "description": "Minutes"
+        "title": "Catalog coverage",
+        "label": "90M",
+        "description": "Tracks in matching pool"
       }
     ]
   },
   "testimonial": {
     "name": "testimonial",
-    "label": "Testimonial",
-    "title": "What Users Say About ShipAny",
-    "description": "Hear from developers and founders who launched their AI startups with ShipAny.",
+    "label": "Testimonials",
+    "title": "Product teams love the clarity",
+    "description": "Early partners are already shipping better music discovery.",
     "icon": "GoThumbsup",
     "items": [
       {
-        "title": "David Chen",
-        "label": "Founder of AIWallpaper.shop",
-        "description": "ShipAny saved us months of development time. We launched our AI wallpaper business in just 2 days and got our first paying customer within a week!",
+        "title": "Lena Ortiz",
+        "label": "Head of Support, SingAlong",
+        "description": "HumToSong plugs into our ticketing workflow so agents identify songs while talking to customers.",
         "image": {
           "src": "/imgs/users/1.png"
         }
       },
       {
-        "title": "Rachel Kim",
-        "label": "CTO at HeyBeauty.ai",
-        "description": "The pre-built AI infrastructure is a game-changer. We didn't have to worry about architecture - just focused on our AI beauty tech and went live fast.",
+        "title": "Raymond Chu",
+        "label": "Founder, JamClips",
+        "description": "Integration took one afternoon and detection accuracy stayed above 97% in noisy bars.",
         "image": {
           "src": "/imgs/users/2.png"
         }
       },
       {
-        "title": "Marcus Thompson",
-        "label": "Solo Developer",
-        "description": "As a solo developer, ShipAny gave me everything I needed - auth, payments, AI integration, and beautiful UI. Launched my SaaS in a weekend!",
+        "title": "Emilia Novak",
+        "label": "Product Manager, LoopRadio",
+        "description": "We finally deliver real-time track info for live streams without manual tagging.",
         "image": {
           "src": "/imgs/users/3.png"
-        }
-      },
-      {
-        "title": "Sofia Garcia",
-        "label": "CEO of Melodisco",
-        "description": "The templates are production-ready and highly customizable. We built our AI music platform in hours instead of months. Incredible time-to-market!",
-        "image": {
-          "src": "/imgs/users/4.png"
-        }
-      },
-      {
-        "title": "James Wilson",
-        "label": "Tech Lead at GPTs.works",
-        "description": "ShipAny's infrastructure is rock-solid. We scaled from 0 to 10k users without touching the backend. Best investment for our AI startup.",
-        "image": {
-          "src": "/imgs/users/5.png"
-        }
-      },
-      {
-        "title": "Anna Zhang",
-        "label": "Startup Founder",
-        "description": "From idea to launch in 3 days! ShipAny's templates and deployment tools made it possible to test our AI business concept incredibly fast.",
-        "image": {
-          "src": "/imgs/users/6.png"
         }
       }
     ]
@@ -323,82 +306,79 @@
   "faq": {
     "name": "faq",
     "label": "FAQ",
-    "title": "Frequently Asked Questions About ShipAny",
-    "description": "Have another question? Contact us on Discord or by email.",
+    "title": "HumToSong essentials",
+    "description": "Need something else? Ping hello@humtosong.com",
     "items": [
       {
-        "title": "What exactly is ShipAny and how does it work?",
-        "description": "ShipAny is a comprehensive NextJS boilerplate designed specifically for building AI SaaS startups. It provides ready-to-use templates, infrastructure setup, and deployment tools that help you launch your AI business in hours instead of days."
+        "title": "What audio formats are supported?",
+        "description": "We accept WAV, MP3, M4A and direct microphone streams up to 60 seconds."
       },
       {
-        "title": "Do I need advanced technical skills to use ShipAny?",
-        "description": "While basic programming knowledge is helpful, ShipAny is designed to be developer-friendly. Our templates and documentation make it easy to get started, even if you're not an expert in AI or cloud infrastructure."
+        "title": "Do you store uploaded recordings?",
+        "description": "Recordings are discarded after matching unless you enable retention for quality review."
       },
       {
-        "title": "What types of AI SaaS can I build with ShipAny?",
-        "description": "ShipAny supports a wide range of AI applications, from content generation to data analysis tools. Our templates cover popular use cases like AI chatbots, content generators, image processing apps, and more."
+        "title": "How accurate is the recognition?",
+        "description": "With clean humming HumToSong averages 97% top-1 accuracy across the global catalog."
       },
       {
-        "title": "How long does it typically take to launch with ShipAny?",
-        "description": "With ShipAny, you can have a working prototype in hours and a production-ready application in hours. Our one-click deployment and pre-configured infrastructure significantly reduce the traditional months-long development cycle."
+        "title": "Can we embed this in mobile apps?",
+        "description": "Yes, use our Swift and Kotlin helpers or call the REST API directly."
       },
       {
-        "title": "What's included in the ShipAny infrastructure?",
-        "description": "ShipAny provides a complete infrastructure stack including authentication, database setup, API integration, payment processing, and scalable cloud deployment. Everything is pre-configured following industry best practices."
+        "title": "Is there a free tier?",
+        "description": "The MVP offers a generous sandbox with 200 monthly recognitions during beta."
       },
       {
-        "title": "Can I customize the templates to match my brand?",
-        "description": "Absolutely! All ShipAny templates are fully customizable. You can modify the design, features, and functionality to match your brand identity and specific business requirements while maintaining the robust underlying infrastructure."
+        "title": "How do pricing plans work?",
+        "description": "Pay for the recognitions you use with automatic scale discounts past 50k matches."
       }
     ]
   },
   "cta": {
     "name": "cta",
-    "title": "Ship your first AI SaaS Startup",
-    "description": "Start from here, ship with ShipAny.",
+    "title": "Bring humming recognition to your product",
+    "description": "Join the HumToSong beta and surprise users with instant matches.",
     "buttons": [
       {
-        "title": "Get ShipAny",
-        "url": "https://shipany.ai",
-        "target": "_blank",
-        "icon": "GoArrowUpRight"
+        "title": "Book onboarding",
+        "url": "mailto:hello@humtosong.com",
+        "icon": "GoArrowUpRight",
+        "target": "_blank"
       },
       {
-        "title": "Read Document",
-        "url": "https://docs.shipany.ai",
-        "target": "_blank",
-        "variant": "outline"
+        "title": "View API reference",
+        "url": "#docs",
+        "variant": "outline",
+        "target": "_self"
       }
     ]
   },
   "footer": {
     "name": "footer",
     "brand": {
-      "title": "ShipAny",
-      "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups. Ship Fast with a variety of templates and components.",
+      "title": "HumToSong",
+      "description": "HumToSong identifies any melody in seconds and streams rich metadata to your app.",
       "logo": {
-        "src": "/logo.png",
-        "alt": "ShipAny"
+        "src": "/humtosong/logo.svg",
+        "alt": "HumToSong"
       },
       "url": "/"
     },
-    "copyright": "© 2025 • ShipAny All rights reserved.",
+    "copyright": "© 2025 • HumToSong",
     "nav": {
       "items": [
         {
-          "title": "About",
-          "children": [
-          ]
+          "title": "Company",
+          "children": []
         },
         {
-          "title": "Resources",
-          "children": [
-          ]
+          "title": "Partners",
+          "children": []
         },
         {
-          "title": "Friends",
-          "children": [
-          ]
+          "title": "Legal",
+          "children": []
         }
       ]
     },
@@ -407,19 +387,19 @@
         {
           "title": "X",
           "icon": "RiTwitterXFill",
-          "url": "https://x.com/heyjude55555",
+          "url": "https://x.com/humtosong",
           "target": "_blank"
         },
         {
           "title": "Github",
           "icon": "RiGithubFill",
-          "url": "https://github.com/heyjude1817",
+          "url": "https://github.com/bboobb-eth/hub2song",
           "target": "_blank"
         },
         {
           "title": "Email",
           "icon": "RiMailLine",
-          "url": "mailto:heyjude1817@gmail.com",
+          "url": "mailto:hello@humtosong.com",
           "target": "_self"
         }
       ]

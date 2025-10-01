@@ -1,85 +1,85 @@
 {
   "showcase": {
     "name": "showcase",
-    "title": "使用 ShipAny 构建的 AI SaaS 创业项目",
-    "description": "易于使用，快速发布。",
+    "title": "正在使用 HumToSong 的产品",
+    "description": "这些团队正在构建更聪明的音乐发现体验。",
     "items": [
       {
-        "title": "ThinkAny",
-        "description": "AI 搜索引擎",
-        "url": "https://thinkany.ai",
-        "target": "_blank",
-        "image": {
-          "src": "/imgs/showcases/7.png"
-        }
-      },
-      {
-        "title": "HeyBeauty",
-        "description": "AI 虚拟试妆",
-        "url": "https://heybeauty.ai",
-        "target": "_blank",
-        "image": {
-          "src": "/imgs/showcases/5.png"
-        }
-      },
-      {
-        "title": "AI Wallpaper",
-        "description": "AI 壁纸生成器",
-        "url": "https://aiwallpaper.shop",
+        "title": "SingAlong 客服",
+        "description": "客服坐席在通话中实时识别用户哼唱。",
+        "url": "https://example.com/singalong",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/1.png"
         }
       },
       {
-        "title": "AI Cover",
-        "description": "AI 封面生成器",
-        "url": "https://aicover.design",
+        "title": "JamClips",
+        "description": "音乐短视频应用即时展示背景曲目信息。",
+        "url": "https://example.com/jamclips",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/2.png"
         }
       },
       {
-        "title": "GPTs Works",
-        "description": "GPTs 目录",
-        "url": "https://gpts.works",
+        "title": "LoopRadio Live",
+        "description": "电台直播实时同步当前播放的歌曲。",
+        "url": "https://example.com/loopradio",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/3.png"
         }
       },
       {
-        "title": "Melodisco",
-        "description": "AI 音乐播放器",
-        "url": "https://melodis.co",
+        "title": "MuseFinder",
+        "description": "创作者在编辑器内即可标记背景音乐。",
+        "url": "https://example.com/musefinder",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/4.png"
         }
       },
       {
-        "title": "Pagen",
-        "description": "AI 落地页生成器",
-        "url": "https://pagen.so",
+        "title": "GrooveLens",
+        "description": "零售空间通过顾客哼唱自动更新播放列表。",
+        "url": "https://example.com/groovelens",
+        "target": "_blank",
+        "image": {
+          "src": "/imgs/showcases/5.png"
+        }
+      },
+      {
+        "title": "BeatScout",
+        "description": "A&R 团队一键比对海量 Demo 的参考曲目。",
+        "url": "https://example.com/beatscout",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/6.png"
         }
       },
       {
-        "title": "SoraFM",
-        "description": "AI 视频生成器",
-        "url": "https://sorafm.trys.ai",
+        "title": "ChorusClass",
+        "description": "音乐教育平台分享练习并快速找到原曲。",
+        "url": "https://example.com/chorusclass",
+        "target": "_blank",
+        "image": {
+          "src": "/imgs/showcases/7.png"
+        }
+      },
+      {
+        "title": "SessionSync",
+        "description": "录音棚记录即兴灵感并立刻生成曲目信息。",
+        "url": "https://example.com/sessionsync",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/8.png"
         }
       },
       {
-        "title": "PodLM",
-        "description": "AI 播客生成器",
-        "url": "https://podlm.ai",
+        "title": "Resonate AR",
+        "description": "沉浸式展馆通过观众哼唱呈现对应歌曲。",
+        "url": "https://example.com/resonate",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/9.png"

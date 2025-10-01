@@ -51,14 +51,14 @@ export default async function () {
         {
           title: t("my_orders.read_docs"),
           icon: "RiBookLine",
-          url: "https://docs.shipany.ai",
-          target: "_blank",
+          url: "#docs",
+          target: "_self",
           variant: "outline",
         },
         {
           title: t("my_orders.join_discord"),
-          icon: "RiDiscordFill",
-          url: "https://discord.gg/HQNnrzjZQS",
+          icon: "RiCustomerService2Line",
+          url: "mailto:hello@humtosong.com",
           target: "_blank",
         },
       ],

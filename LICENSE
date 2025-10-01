@@ -1,77 +1,21 @@
-ShipAny AI SaaS Boilerplate License Agreement
+HumToSong MVP License
 
-TL;DR;
-Personal License: Build unlimited AI SaaS products as an individual developer.
-Team License: Build unlimited AI SaaS products as a team.
+This repository包含 HumToSong 哼唱识曲最小可行产品（MVP）的源代码、配置与素材。除非另有书面约定，所有文件均归 HumToSong 团队所有。
 
-This License Agreement ("Agreement") is made between ShipAny ("Licensor"), and you ("Licensee"), concerning the use of ShipAny AI SaaS Boilerplate ("Product"). By using the Product, you agree to these terms.
+在获得授权前，你可以：
 
-1. License Types and Rights
+- 克隆仓库本地评估；
+- 为 HumToSong 项目内部开发与测试；
+- 提交改进或修复的合并请求。
 
-1.1 Personal License
+未经书面许可，你不得：
 
-ShipAny grants you a Personal License that includes:
+- 将本仓库代码或素材用于其他商业项目；
+- 公开发布、转售或再授权给第三方；
+- 移除 HumToSong 或相关版权信息。
 
-- Development of unlimited AI SaaS applications
-- Use of all included AI service templates and components
-- Commercial usage rights for your developed applications
-- Access to basic documentation and community support
+本仓库按“现状”提供，不对适用性、准确性或可用性做出任何保证。使用所产生的风险由你自行承担。
 
-  1.2 Team License
+如需商务授权或合作，请联系 hello@humtosong.com。
 
-ShipAny grants you a Team License that includes:
-
-- All Personal License features
-- Team collaboration capabilities
-- Premium AI integration templates
-- Enterprise-ready features and configurations
-- Priority technical support
-- Advanced AI service implementation guides
-
-2. Usage Restrictions
-
-You agree not to:
-
-- Resell the boilerplate code as a standalone product
-- Share license keys or access credentials
-- Remove ShipAny attribution and copyright notices
-- Redistribute the source code publicly
-- Create competing AI boilerplate products
-- Use the code in violation of any laws or regulations
-
-3. Intellectual Property
-
-The Product, including all source code, documentation, and AI integration templates, remains the exclusive property of ShipAny. Your license grants you usage rights but not ownership of the Product.
-
-4. Warranty Disclaimer
-
-The Product is provided "as is" without warranty. ShipAny does not guarantee that the Product will meet your specific requirements or be error-free.
-
-5. Liability Limitations
-
-ShipAny shall not be liable for any damages arising from:
-
-- Use or inability to use the Product
-- Integration with third-party AI services
-- Data processing or AI model operations
-- Service interruptions or failures
-
-6. Term and Termination
-
-ShipAny may terminate your license if you breach this Agreement. Upon termination, you must cease using the Product and destroy all copies.
-
-7. Support and Updates
-
-- Personal License includes community support
-- Team License includes priority email support
-- Updates and improvements are provided at ShipAny's discretion
-
-8. General Provisions
-
-This Agreement is governed by the laws of Singapore. Any disputes shall be resolved in the courts of Singapore.
-
-Last Updated: [2024-12-30]
-
-ShipAny
-Website: https://shipany.ai
-Contact: support@shipany.ai
+最后更新：2025-01-01

@@ -1,4 +1,4 @@
-import { RiDiscordFill, RiEmotionSadFill, RiGithubFill } from "react-icons/ri";
+import { RiEmotionSadFill, RiMailLine } from "react-icons/ri";
 import { getAffiliateSummary, getUserAffiliates } from "@/models/affiliate";
 import { getOrdersByPaidEmail, getOrdersByUserUuid } from "@/models/order";
 import { getUserEmail, getUserUuid } from "@/services/user";
@@ -51,7 +51,7 @@ export default async function () {
     // bought
     let is_affiliate = false;
     for (const order of orders) {
-      if (order.product_id === "premium") {
+      if (order.credits > 0) {
         is_affiliate = true;
         break;
       }
@@ -63,12 +63,12 @@ export default async function () {
           <RiEmotionSadFill className="w-8 h-8" />
           <span>{t("my_invites.no_affiliates")}</span>
           <Link
-            href="https://discord.gg/HQNnrzjZQS"
+            href="mailto:hello@humtosong.com"
             target="_blank"
             className="flex items-center gap-1 font-semibold text-sm text-primary border border-primary rounded-md px-4 py-2"
           >
-            <RiDiscordFill className="text-xl" />
-            Discord
+            <RiMailLine className="text-xl" />
+            Email
           </Link>
         </div>
       );
@@ -125,15 +125,15 @@ export default async function () {
       items: [
         {
           title: t("my_invites.edit_invite_link"),
-          icon: "RiBookLine",
-          url: "https://docs.shipany.ai",
+          icon: "RiMailLine",
+          url: "mailto:hello@humtosong.com",
           target: "_blank",
           variant: "outline",
         },
         {
           title: t("my_invites.copy_invite_link"),
-          icon: "RiCopy2Line",
-          url: "https://discord.gg/HQNnrzjZQS",
+          icon: "RiShareForwardLine",
+          url: "https://x.com/humtosong",
           target: "_blank",
         },
       ],

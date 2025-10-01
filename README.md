@@ -1,93 +1,78 @@
-# ShipAny Template One
+# HumToSong Web MVP
 
-Ship Any AI SaaS Startups in hours.
+HumToSong 提供哼唱识曲与曲目信息服务。本仓库是 Web 端最小可行产品（MVP），基于 Next.js + Supabase + Tailwind 搭建，已精简所有与识曲无关的模板功能，便于继续二次开发。
 
 ![preview](preview.png)
 
-## Quick Start
+## 开发指南
 
-1. Clone the repository
+1. **安装依赖**
 
-```bash
-git clone https://github.com/shipanyai/shipany-template-one.git
-```
+   ```bash
+   pnpm install
+   ```
 
-2. Install dependencies
+2. **启动开发环境**
 
-```bash
-pnpm install
-```
+   ```bash
+   pnpm dev
+   ```
 
-3. Run the development server
+3. **环境变量**
 
-```bash
-pnpm dev
-```
+   复制示例文件并补充 ACRCloud 及其他必要配置：
 
-## Customize
+   ```bash
+   cp .env.example .env.local
+   ```
 
-- Set your environment variables
+   - `ACR_ACCESS_KEY` / `ACR_ACCESS_SECRET`
+   - `ACR_HOST`
+   - `ACR_META_TOKEN`
+   - `NEXT_PUBLIC_UMAMI_*`（可选监控）
 
-```bash
-cp .env.example .env.local
-```
+4. **文案与多语言**
 
-- Set your theme in `app/theme.css`
+   - 登陆页内容：`i18n/pages/landing`
+   - 案例展示：`i18n/pages/showcase`
+   - 通用文案：`i18n/messages`
 
-[shadcn-ui-theme-generator](https://zippystarter.com/tools/shadcn-ui-theme-generator)
+5. **样式与主题**
 
-- Set your landing page content in `i18n/pages/landing`
+   Tailwind 配置位于 `tailwind.config.ts`，可按需更新主题色与组件样式。
 
-- Set your i18n messages in `i18n/messages`
-
-## Analytics
-
-The template supports multiple analytics providers:
-
-- **Google Analytics**: Traditional web analytics
-- **OpenPanel**: Privacy-focused analytics
-- **Plausible**: Simple and privacy-friendly
-- **Umami**: Open-source, privacy-first analytics
-
-Configure in your `.env.local`:
-
-```env
-# Umami Analytics (recommended for privacy)
-NEXT_PUBLIC_UMAMI_WEBSITE_ID="your-website-id"
-NEXT_PUBLIC_UMAMI_SCRIPT_URL="https://cloud.umami.is/script.js"
-```
-
-## Deploy
-
-- Deploy to Vercel
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fshipanyai%2Fshipany-template-one&project-name=my-shipany-project&repository-name=my-shipany-project&redirect-url=https%3A%2F%2Fshipany.ai&demo-title=ShipAny&demo-description=Ship%20Any%20AI%20Startup%20in%20hours%2C%20not%20days&demo-url=https%3A%2F%2Fshipany.ai&demo-image=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FGgGSW3La8AAGJgU%3Fformat%3Djpg%26name%3Dlarge)
-
-- Deploy to Cloudflare
-
-1. Customize your environment variables
+## 常用脚本
 
 ```bash
-cp .env.example .env.production
-cp wrangler.toml.example wrangler.toml
+pnpm lint       # ESLint 检查
+pnpm typecheck  # TypeScript 类型检查
+pnpm build      # 生成生产构建
 ```
 
-edit your environment variables in `.env.production`
+## 部署
 
-and put all the environment variables under `[vars]` in `wrangler.toml`
+- 推荐：Vercel（默认配置对齐 Next.js）
+- 其他：Cloudflare / 自托管（如不需要可忽略 `wrangler.toml.example`、`Dockerfile`）
 
-2. Deploy
+部署前请确认：
 
-```bash
-npm run cf:deploy
-```
+- `.env.production` 仅包含必要变量；
+- `pnpm build`、`pnpm lint`、`pnpm typecheck` 通过；
+- 去除或替换所有示例资源（`public/humtosong` 等）。
 
-## Community
+## 目录概览
 
-- [ShipAny](https://shipany.ai)
-- [Documentation](https://docs.shipany.ai)
-- [Discord](https://discord.gg/HQNnrzjZQS)
+- `app/`：Next.js 应用路由与页面
+- `services/`：API 调用与业务逻辑
+- `components/`：复用的 UI 组件
+- `i18n/`：多语言内容与配置
+- `public/`：静态资源（HumToSong 品牌素材）
+
+## 反馈与支持
+
+- 产品或商务合作：`hello@humtosong.com`
+- Bug / 需求：提 Issue 或合并请求
 
 ## License
 
-- [ShipAny AI SaaS Boilerplate License Agreement](LICENSE)
+- [HumToSong MVP License](LICENSE)

@@ -22,10 +22,10 @@ export default async function AdminLayout({
 
   const sidebar: Sidebar = {
     brand: {
-      title: "ShipAny",
+      title: "HumToSong",
       logo: {
-        src: "/logo.png",
-        alt: "ShipAny",
+        src: "/humtosong/logo.svg",
+        alt: "HumToSong",
       },
       url: "/admin",
     },
@@ -66,48 +66,48 @@ export default async function AdminLayout({
     bottomNav: {
       items: [
         {
-          title: "Documents",
-          url: "https://docs.shipany.ai",
+          title: "Status",
+          url: "https://status.humtosong.com",
           target: "_blank",
-          icon: "RiFileTextLine",
+          icon: "RiSignalWifiFill",
         },
         {
-          title: "Blocks",
-          url: "https://shipany.ai/blocks",
-          target: "_blank",
-          icon: "RiDashboardLine",
+          title: "API",
+          url: "/docs/api",
+          target: "_self",
+          icon: "RiCodeBoxLine",
         },
         {
-          title: "Showcases",
-          url: "https://shipany.ai/showcase",
+          title: "Support",
+          url: "mailto:hello@humtosong.com",
           target: "_blank",
-          icon: "RiAppsLine",
+          icon: "RiCustomerService2Line",
         },
       ],
     },
     social: {
       items: [
         {
-          title: "Home",
+          title: "Website",
           url: "/",
-          target: "_blank",
+          target: "_self",
           icon: "RiHomeLine",
         },
         {
-          title: "Github",
-          url: "https://github.com/shipanyai/shipany-template-one",
+          title: "GitHub",
+          url: "https://github.com/bboobb-eth/hub2song",
           target: "_blank",
           icon: "RiGithubLine",
         },
         {
-          title: "Discord",
-          url: "https://discord.gg/HQNnrzjZQS",
+          title: "Email",
+          url: "mailto:hello@humtosong.com",
           target: "_blank",
-          icon: "RiDiscordLine",
+          icon: "RiMailLine",
         },
         {
           title: "X",
-          url: "https://x.com/shipanyai",
+          url: "https://x.com/humtosong",
           target: "_blank",
           icon: "RiTwitterLine",
         },
@@ -122,10 +122,10 @@ export default async function AdminLayout({
           target: "_blank",
         },
         {
-          title: "Recharge",
-          url: "/pricing",
-          icon: "RiMoneyDollarBoxLine",
-          target: "_blank",
+          title: "Usage",
+          url: "/admin/usage",
+          icon: "RiBarChart2Line",
+          target: "_self",
         },
       ],
     },

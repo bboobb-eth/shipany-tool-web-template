@@ -1,85 +1,85 @@
 {
   "showcase": {
     "name": "showcase",
-    "title": "AI SaaS Startups built with ShipAny",
-    "description": "Easy to use and fast to ship.",
+    "title": "Products powered by HumToSong",
+    "description": "A glimpse of teams building delightful music discovery.",
     "items": [
       {
-        "title": "ThinkAny",
-        "description": "AI Search Engine",
-        "url": "https://thinkany.ai",
-        "target": "_blank",
-        "image": {
-          "src": "/imgs/showcases/7.png"
-        }
-      },
-      {
-        "title": "HeyBeauty",
-        "description": "AI Virtual Try On",
-        "url": "https://heybeauty.ai",
-        "target": "_blank",
-        "image": {
-          "src": "/imgs/showcases/5.png"
-        }
-      },
-      {
-        "title": "AI Wallpaper",
-        "description": "AI Wallpaper Generator",
-        "url": "https://aiwallpaper.shop",
+        "title": "SingAlong Helpdesk",
+        "description": "Support agents identify humming from callers in realtime.",
+        "url": "https://example.com/singalong",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/1.png"
         }
       },
       {
-        "title": "AI Cover",
-        "description": "AI Cover Generator",
-        "url": "https://aicover.design",
+        "title": "JamClips",
+        "description": "Short-form concert recaps with instant track credits.",
+        "url": "https://example.com/jamclips",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/2.png"
         }
       },
       {
-        "title": "GPTs Works",
-        "description": "GPTs Directory",
-        "url": "https://gpts.works",
+        "title": "LoopRadio Live",
+        "description": "Radio stations surface current songs for listeners.",
+        "url": "https://example.com/loopradio",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/3.png"
         }
       },
       {
-        "title": "Melodisco",
-        "description": "AI Music Player",
-        "url": "https://melodis.co",
+        "title": "MuseFinder",
+        "description": "Creators tag background music without leaving the editor.",
+        "url": "https://example.com/musefinder",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/4.png"
         }
       },
       {
-        "title": "Pagen",
-        "description": "AI Landing Page Generator",
-        "url": "https://pagen.so",
+        "title": "GrooveLens",
+        "description": "Retail playlists update automatically from in-store hums.",
+        "url": "https://example.com/groovelens",
+        "target": "_blank",
+        "image": {
+          "src": "/imgs/showcases/5.png"
+        }
+      },
+      {
+        "title": "BeatScout",
+        "description": "A&R teams trace demo references with one click.",
+        "url": "https://example.com/beatscout",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/6.png"
         }
       },
       {
-        "title": "SoraFM",
-        "description": "AI Video Generator",
-        "url": "https://sorafm.trys.ai",
+        "title": "ChorusClass",
+        "description": "Music educators share exercises and find original tracks.",
+        "url": "https://example.com/chorusclass",
+        "target": "_blank",
+        "image": {
+          "src": "/imgs/showcases/7.png"
+        }
+      },
+      {
+        "title": "SessionSync",
+        "description": "Studios log jam sessions and capture song splits instantly.",
+        "url": "https://example.com/sessionsync",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/8.png"
         }
       },
       {
-        "title": "PodLM",
-        "description": "AI Podcast Generator",
-        "url": "https://podlm.ai",
+        "title": "Resonate AR",
+        "description": "Immersive exhibits surface track info from visitor humming.",
+        "url": "https://example.com/resonate",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/9.png"

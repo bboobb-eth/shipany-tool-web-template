@@ -31,9 +31,9 @@ export default async function () {
       items: [
         {
           title: t("my_credits.recharge"),
-          url: "/pricing",
+          url: "mailto:hello@humtosong.com",
           target: "_blank",
-          icon: "RiBankCardLine",
+          icon: "RiMailLine",
         },
       ],
     },

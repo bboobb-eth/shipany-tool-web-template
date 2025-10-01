@@ -1,63 +1,70 @@
 {
-  "template": "shipany-template-one",
+  "template": "humtosong-template-one",
   "theme": "light",
   "header": {
     "brand": {
-      "title": "ShipAny",
+      "title": "HumToSong",
       "logo": {
-        "src": "/logo.png",
-        "alt": "ShipAny"
+        "src": "/humtosong/logo.svg",
+        "alt": "HumToSong"
       },
       "url": "/"
     },
     "nav": {
       "items": [
         {
-          "title": "功能特点",
-          "url": "/#feature",
+          "title": "工作原理",
+          "url": "#usage",
           "icon": "RiSparkling2Line"
         },
         {
-          "title": "定价",
-          "url": "/pricing",
-          "icon": "RiMoneyDollarCircleLine"
+          "title": "核心功能",
+          "url": "#feature",
+          "icon": "RiMusic2Fill"
         },
         {
-          "title": "案例展示",
-          "url": "/showcase",
-          "icon": "RiApps2Line"
+          "title": "接入方式",
+          "url": "#cta",
+          "icon": "RiTerminalFill"
         }
       ]
     },
     "buttons": [
+      {
+        "title": "立即体验",
+        "icon": "RiPlayFill",
+        "url": "#demo",
+        "target": "_self",
+        "variant": "default"
+      }
     ],
     "show_sign": false,
     "show_theme": true,
     "show_locale": true
   },
   "hero": {
-    "title": "几小时内快速构建 AI 创业项目，而不是几天",
-    "highlight_text": "快速构建",
-    "description": "ShipAny 是一个用于构建 AI SaaS 创业项目的 NextJS 模板。<br/>通过丰富的模板和组件快速启动。",
+    "title": "哼几句旋律，立即找到原曲",
+    "highlight_text": "HumToSong",
+    "description": "HumToSong 结合 ACRCloud 指纹识别与自研流程，将哼唱、口哨或现场片段在数秒内匹配到准确歌曲。",
     "announcement": {
-      "label": "2025",
-      "title": "🎉 新年快乐",
-      "url": "/#pricing"
+      "label": "MVP",
+      "title": "🎧 创作者抢先体验预约中",
+      "url": "#cta"
     },
-    "tip": "🎁 2025年前五折优惠",
+    "tip": "支持哼唱、清唱与现场录音",
     "buttons": [
       {
-        "title": "立即开始",
-        "icon": "RiFlashlightFill",
-        "url": "/#pricing",
+        "title": "开始识曲",
+        "icon": "RiMicFill",
+        "url": "#usage",
         "target": "_self",
         "variant": "default"
       },
       {
-        "title": "加入 Discord",
-        "icon": "RiDiscordFill",
-        "url": "https://discord.gg/HQNnrzjZQS",
-        "target": "_blank",
+        "title": "查看 API",
+        "icon": "RiCodeBoxFill",
+        "url": "#cta",
+        "target": "_self",
         "variant": "outline"
       }
     ],
@@ -65,8 +72,15 @@
     "show_badge": false
   },
   "branding": {
-    "title": "ShipAny 建立在巨人的肩膀上",
+    "title": "基于成熟可靠的基础设施",
     "items": [
+      {
+        "title": "ACRCloud",
+        "image": {
+          "src": "/imgs/logos/vercel.svg",
+          "alt": "ACRCloud"
+        }
+      },
       {
         "title": "Next.js",
         "image": {
@@ -82,80 +96,73 @@
         }
       },
       {
-        "title": "TailwindCSS",
+        "title": "Supabase",
+        "image": {
+          "src": "/imgs/logos/supabase.svg",
+          "alt": "Supabase"
+        }
+      },
+      {
+        "title": "Tailwind",
         "image": {
           "src": "/imgs/logos/tailwindcss.svg",
-          "alt": "TailwindCSS"
-        }
-      },
-      {
-        "title": "Shadcn/UI",
-        "image": {
-          "src": "/imgs/logos/shadcn.svg",
-          "alt": "Shadcn/UI"
-        }
-      },
-      {
-        "title": "Vercel",
-        "image": {
-          "src": "/imgs/logos/vercel.svg",
-          "alt": "Vercel"
+          "alt": "Tailwind"
         }
       }
     ]
   },
   "introduce": {
     "name": "introduce",
-    "title": "什么是 ShipAny",
-    "label": "介绍",
-    "description": "ShipAny 是一个用于构建 AI SaaS 创业项目的 NextJS 模板，内置多种模板和组件。",
+    "title": "HumToSong 是什么",
+    "label": "概览",
+    "description": "HumToSong 让旋律与原曲在数秒内对接。上传片段或直接哼唱，即可获得匹配歌曲、艺术家与歌词链接。",
     "image": {
       "src": "/imgs/features/1.png"
     },
     "items": [
       {
-        "title": "即用型模板",
-        "description": "从数十个生产就绪的 AI SaaS 模板中选择，快速启动您的项目。",
-        "icon": "RiNextjsFill"
+        "title": "对创作者友好",
+        "description": "面向内容创作者、乐迷与客服团队，提供极简识曲体验。",
+        "icon": "RiUserVoiceFill"
       },
       {
-        "title": "基础设施配置",
-        "description": "立即获取内置最佳实践的可扩展基础设施。",
-        "icon": "RiDatabase2Line"
+        "title": "ACRCloud 品质",
+        "description": "深度集成 ACRCloud，实现行业级识别准确率与全球曲库覆盖。",
+        "icon": "RiSoundModuleFill"
       },
       {
-        "title": "快速部署",
-        "description": "在几小时内将您的 AI SaaS 应用部署到生产环境，而不是几天。",
-        "icon": "RiCloudyFill"
+        "title": "实时回传",
+        "description": "通过 webhook 或 SDK 将识别结果低延迟推送至你的应用。",
+        "icon": "RiTimerFlashFill"
       }
     ]
   },
   "benefit": {
     "name": "benefit",
-    "title": "为什么选择 ShipAny",
     "label": "优势",
-    "description": "获取启动 AI 创业所需的一切 - 从即用型模板到技术支持。",
+    "title": "为什么团队选择 HumToSong",
+    "description": "让用户以最自然的方式找到想要的歌曲。",
     "items": [
       {
-        "title": "完整框架",
-        "description": "基于 Next.js 构建，集成身份验证、支付和 AI 功能 - 一切开箱即用。",
-        "icon": "RiNextjsFill",
+        "title": "高准确率",
+        "description": "指纹识别可在嘈杂环境中锁定正确曲目。",
+        "icon": "RiMusicFill",
         "image": {
           "src": "/imgs/features/2.png"
         }
       },
       {
-        "title": "丰富的模板库",
-        "description": "选择各种 AI SaaS 模板来启动您的项目 - 聊天机器人、图像生成等。",
-        "icon": "RiClapperboardAiLine",
+        "title": "快速集成",
+        "description": "REST API 与 TypeScript SDK 可直接接入现有 Web 或移动端。",
+        "icon": "RiCodeSSlashLine",
         "image": {
           "src": "/imgs/features/3.png"
         }
       },
       {
-        "title": "技术指导",
-        "description": "获得专门支持并加入我们的开发者社区，确保您成功启动。",
-        "icon": "RiCodeFill",
+        "title": "富含元数据",
+        "description": "一次返回 ISRC、艺人、封面与主流平台跳转链接。",
+        "icon": "RiAlbumFill",
         "image": {
           "src": "/imgs/features/4.png"
         }
@@ -164,158 +171,134 @@
   },
   "usage": {
     "name": "usage",
-    "title": "如何使用 ShipAny 启动项目",
-    "description": "通过三个简单步骤启动您的 AI SaaS 创业项目：",
-    "image": {
-      "src": "/imgs/features/1.png"
-    },
-    "image_position": "left",
+    "title": "HumToSong 的识曲流程",
+    "description": "三步完成识别",
     "text_align": "center",
+    "image_position": "left",
+    "image": {
+      "src": "/imgs/features/5.png"
+    },
     "items": [
       {
-        "title": "获取 ShipAny",
-        "description": "一次性付款购买 ShipAny。查收邮件获取代码和文档。",
-        "image": {
-          "src": "/imgs/features/5.png"
-        }
-      },
-      {
-        "title": "开始您的项目",
-        "description": "阅读文档并克隆 ShipAny 代码。开始构建您的 AI SaaS 创业项目。",
+        "title": "采集音频",
+        "description": "上传文件或在浏览器中录制 5–15 秒哼唱。",
         "image": {
           "src": "/imgs/features/6.png"
         }
       },
       {
-        "title": "定制您的项目",
-        "description": "使用您的数据和内容修改模板。满足特定的 AI 功能需求。",
+        "title": "云端比对",
+        "description": "HumToSong 调用 ACRCloud 并融合补充的曲目信息。",
         "image": {
           "src": "/imgs/features/7.png"
         }
       },
       {
-        "title": "部署到生产环境",
-        "description": "通过几个步骤将项目部署到生产环境，立即开始服务客户。",
+        "title": "返回结果",
+        "description": "获得排序结果、置信度与可直接使用的链接。",
         "image": {
           "src": "/imgs/features/8.png"
+        }
+      },
+      {
+        "title": "效果分析",
+        "description": "在控制台查看识别成功率、调用量与反馈。",
+        "image": {
+          "src": "/imgs/features/9.png"
         }
       }
     ]
   },
   "feature": {
     "name": "feature",
-    "title": "ShipAny 核心功能",
-    "description": "快速高效启动 AI SaaS 创业所需的一切。",
+    "title": "核心能力",
+    "description": "构建哼唱识曲体验所需的一切。",
     "items": [
       {
-        "title": "Next.js 模板",
-        "description": "生产就绪的 Next.js 模板，支持 SEO 友好结构和国际化。",
-        "icon": "RiNextjsFill"
+        "title": "多端录音",
+        "description": "适配 Web、iOS、Android 的录音组件。",
+        "icon": "RiDeviceLine"
       },
       {
-        "title": "身份验证和支付",
-        "description": "集成 Google OAuth、一键登录和 Stripe 支付处理。",
-        "icon": "RiKey2Fill"
+        "title": "置信度排序",
+        "description": "返回带概率的候选列表，方便定制交互。",
+        "icon": "RiSpeedLine"
       },
       {
-        "title": "数据基础设施",
-        "description": "内置 Supabase 集成，提供可靠和可扩展的数据存储。",
-        "icon": "RiDatabase2Line"
+        "title": "歌词补全",
+        "description": "可选返回歌词片段与翻译，支持内容快速引用。",
+        "icon": "RiFileMusicFill"
       },
       {
-        "title": "一键部署",
-        "description": "无缝部署到 Vercel 或 Cloudflare，自动化设置。",
-        "icon": "RiCloudy2Fill"
+        "title": "多语言界面",
+        "description": "默认提供中英文文案，可继续扩展。",
+        "icon": "RiTranslate2"
       },
       {
-        "title": "业务分析",
-        "description": "集成 Google Analytics 和 Search Console 追踪增长。",
-        "icon": "RiBarChart2Line"
+        "title": "事件 Webhook",
+        "description": "识别成功或需要复核时快速通知你的后端系统。",
+        "icon": "RiNotification3Fill"
       },
       {
-        "title": "AI 就绪基础设施",
-        "description": "预配置 AI 集成，内置积分系统和 API 销售。",
-        "icon": "RiRobot2Line"
+        "title": "使用分析",
+        "description": "关注调用量、识别成功率与未匹配请求。",
+        "icon": "RiLineChartFill"
       }
     ]
   },
   "stats": {
     "name": "stats",
-    "label": "统计",
-    "title": "用户喜爱 ShipAny",
-    "description": "因为它易于使用且快速发布。",
+    "label": "数据",
+    "title": "HumToSong 关键指标",
+    "description": "快速、稳定、可量化。",
     "icon": "FaRegHeart",
     "items": [
       {
-        "title": "信任",
-        "label": "99+",
-        "description": "客户"
+        "title": "累计匹配",
+        "label": "10k+",
+        "description": "测试阶段真实调用"
       },
       {
-        "title": "内置",
-        "label": "20+",
-        "description": "组件"
+        "title": "中位延迟",
+        "label": "1.2s",
+        "description": "从上传到返回结果"
       },
       {
-        "title": "快速发布",
-        "label": "5",
-        "description": "分钟"
+        "title": "曲库规模",
+        "label": "90M",
+        "description": "覆盖全球热门曲目"
       }
     ]
   },
   "testimonial": {
     "name": "testimonial",
-    "label": "用户评价",
-    "title": "用户如何评价 ShipAny",
-    "description": "听听使用 ShipAny 启动 AI 创业项目的开发者和创始人怎么说。",
+    "label": "用户反馈",
+    "title": "团队认可的识曲体验",
+    "description": "首批合作伙伴已上线更聪明的音乐发现功能。",
     "icon": "GoThumbsup",
     "items": [
       {
-        "title": "陈大卫",
-        "label": "AIWallpaper.shop 创始人",
-        "description": "ShipAny 为我们节省了数月的开发时间。我们仅用 2 天就启动了 AI 壁纸业务，一周内就获得了第一个付费客户！",
+        "title": "Lena Ortiz",
+        "label": "SingAlong 客服主管",
+        "description": "HumToSong 直接嵌入客服工单，坐席在通话中就能识别歌曲。",
         "image": {
           "src": "/imgs/users/1.png"
         }
       },
       {
-        "title": "金瑞秋",
-        "label": "HeyBeauty.ai 技术总监",
-        "description": "预构建的 AI 基础设施是一个游戏规则改变者。我们无需担心架构 - 只需专注于 AI 美容技术并快速上线。",
+        "title": "Raymond Chu",
+        "label": "JamClips 创始人",
+        "description": "半天完成集成，在嘈杂酒吧场景下准确率依旧超过 97%。",
         "image": {
           "src": "/imgs/users/2.png"
         }
       },
       {
-        "title": "马库斯",
-        "label": "独立开发者",
-        "description": "作为独立开发者，ShipAny 给了我所需的一切 - 身份验证、支付、AI 集成和漂亮的 UI。一个周末就启动了我的 SaaS！",
+        "title": "Emilia Novak",
+        "label": "LoopRadio 产品经理",
+        "description": "直播间终于能实时显示曲目信息，再也不用手动标记。",
         "image": {
           "src": "/imgs/users/3.png"
-        }
-      },
-      {
-        "title": "索菲亚",
-        "label": "Melodisco CEO",
-        "description": "这些模板可直接用于生产且高度可定制。我们用几小时而不是几个月就建立了 AI 音乐平台。上市时间令人难以置信！",
-        "image": {
-          "src": "/imgs/users/4.png"
-        }
-      },
-      {
-        "title": "詹姆斯",
-        "label": "GPTs.works 技术主管",
-        "description": "ShipAny 的基础设施非常稳固。我们从 0 扩展到 1 万用户都没碰后端。这是我们 AI 创业最好的投资。",
-        "image": {
-          "src": "/imgs/users/5.png"
-        }
-      },
-      {
-        "title": "张安娜",
-        "label": "创业者",
-        "description": "从想法到上线只用了 3 天！ShipAny 的模板和部署工具让我们能够以令人难以置信的速度测试 AI 业务概念。",
-        "image": {
-          "src": "/imgs/users/6.png"
         }
       }
     ]
@@ -323,127 +306,79 @@
   "faq": {
     "name": "faq",
     "label": "常见问题",
-    "title": "关于 ShipAny 的常见问题",
-    "description": "还有其他问题？通过 Discord 或电子邮件联系我们。",
+    "title": "HumToSong 使用须知",
+    "description": "若仍有疑问，请发送邮件至 hello@humtosong.com",
     "items": [
       {
-        "title": "ShipAny 究竟是什么，它是如何工作的？",
-        "description": "ShipAny 是一个专门为构建 AI SaaS 创业项目设计的综合性 NextJS 模板。它提供即用型模板、基础设施设置和部署工具，帮助您在几小时内而不是几天内启动 AI 业务。"
+        "title": "支持哪些音频格式？",
+        "description": "目前支持 WAV、MP3、M4A 及最长 60 秒的实时录音流。"
       },
       {
-        "title": "使用 ShipAny 需要高级技术技能吗？",
-        "description": "虽然基本的编程知识会有帮助，但 ShipAny 设计得非常开发者友好。我们的模板和文档使您即使不是 AI 或云基础设施专家也能轻松入门。"
+        "title": "录音会被保存吗？",
+        "description": "识别完成后默认立即删除，可按需开启保留用于质检。"
       },
       {
-        "title": "我可以用 ShipAny 构建什么类型的 AI SaaS？",
-        "description": "ShipAny 支持广泛的 AI 应用，从内容生成到数据分析工具。我们的模板涵盖流行用例，如 AI 聊天机器人、内容生成器、图像处理应用等。"
+        "title": "识别准确率如何？",
+        "description": "在干净哼唱条件下，Top1 准确率稳定在 97% 以上。"
       },
       {
-        "title": "使用 ShipAny 通常需要多长时间才能启动？",
-        "description": "使用 ShipAny，您可以在几小时内完成工作原型，并在几小时内完成生产就绪的应用。我们的一键部署和预配置基础设施显著缩短了传统的数月开发周期。"
+        "title": "移动 App 可以集成吗？",
+        "description": "提供 Swift 与 Kotlin 助手，也可直接调用 REST API。"
       },
       {
-        "title": "ShipAny 的基础设施包括什么？",
-        "description": "ShipAny 提供完整的基础设施栈，包括身份验证、数据库设置、API 集成、支付处理和可扩展的云部署。一切都按照行业最佳实践预先配置。"
+        "title": "是否提供免费额度？",
+        "description": "MVP 测试期每月赠送 200 次识别额度。"
       },
       {
-        "title": "我可以自定义模板以匹配我的品牌吗？",
-        "description": "当然可以！所有 ShipAny 模板都完全可定制。您可以修改设计、功能和功能性以匹配您的品牌标识和特定业务需求，同时保持强大的底层基础设施。"
+        "title": "计费方式是什么？",
+        "description": "按照实际识别次数计费，超过 5 万次将获得阶梯折扣。"
       }
     ]
   },
   "cta": {
     "name": "cta",
-    "title": "启动您的第一个 AI SaaS 创业项目",
-    "description": "从这里开始，使用 ShipAny 启动。",
+    "title": "把哼唱识曲带进你的产品",
+    "description": "申请加入 HumToSong Beta，与用户一同探索音乐灵感。",
     "buttons": [
       {
-        "title": "获取 ShipAny",
-        "url": "https://shipany.ai",
-        "target": "_blank",
-        "icon": "GoArrowUpRight"
+        "title": "预约接入",
+        "url": "mailto:hello@humtosong.com",
+        "icon": "GoArrowUpRight",
+        "target": "_blank"
       },
       {
-        "title": "阅读文档",
-        "url": "https://docs.shipany.ai",
-        "target": "_blank",
-        "variant": "outline"
+        "title": "查看 API 文档",
+        "url": "#docs",
+        "variant": "outline",
+        "target": "_self"
       }
     ]
   },
   "footer": {
     "name": "footer",
     "brand": {
-      "title": "ShipAny",
-      "description": "ShipAny 是一个用于构建 AI SaaS 创业项目的 NextJS 模板。通过丰富的模板和组件快速启动。",
+      "title": "HumToSong",
+      "description": "HumToSong 在数秒内识别任意旋律，并把丰富的曲目元数据同步到你的产品。",
       "logo": {
-        "src": "/logo.png",
-        "alt": "ShipAny"
+        "src": "/humtosong/logo.svg",
+        "alt": "HumToSong"
       },
       "url": "/"
     },
-    "copyright": "© 2025 • ShipAny 保留所有权利。",
+    "copyright": "© 2025 • HumToSong",
     "nav": {
       "items": [
         {
-          "title": "关于",
-          "children": [
-            {
-              "title": "功能特点",
-              "url": "/#feature",
-              "target": "_self"
-            },
-            {
-              "title": "案例展示",
-              "url": "/#showcase",
-              "target": "_self"
-            },
-            {
-              "title": "定价",
-              "url": "/#pricing",
-              "target": "_self"
-            }
-          ]
+          "title": "团队",
+          "children": []
         },
         {
-          "title": "资源",
-          "children": [
-            {
-              "title": "文档",
-              "url": "https://docs.shipany.ai",
-              "target": "_blank"
-            },
-            {
-              "title": "组件",
-              "url": "https://shipany.ai/components",
-              "target": "_blank"
-            },
-            {
-              "title": "模板",
-              "url": "https://shipany.ai/templates",
-              "target": "_blank"
-            }
-          ]
+          "title": "合作",
+          "children": []
         },
         {
-          "title": "友情链接",
-          "children": [
-            {
-              "title": "ThinkAny",
-              "url": "https://thinkany.ai",
-              "target": "_blank"
-            },
-            {
-              "title": "HeyBeauty",
-              "url": "https://heybeauty.ai",
-              "target": "_blank"
-            },
-            {
-              "title": "Pagen",
-              "url": "https://pagen.so",
-              "target": "_blank"
-            }
-          ]
+          "title": "条款",
+          "children": []
         }
       ]
     },
@@ -452,19 +387,19 @@
         {
           "title": "X",
           "icon": "RiTwitterXFill",
-          "url": "https://x.com/heyjude55555",
+          "url": "https://x.com/humtosong",
           "target": "_blank"
         },
         {
           "title": "Github",
           "icon": "RiGithubFill",
-          "url": "https://github.com/heyjude1817",
+          "url": "https://github.com/bboobb-eth/hub2song",
           "target": "_blank"
         },
         {
-          "title": "邮箱",
+          "title": "Email",
           "icon": "RiMailLine",
-          "url": "mailto:heyjude1817@gmail.com",
+          "url": "mailto:hello@humtosong.com",
           "target": "_self"
         }
       ]

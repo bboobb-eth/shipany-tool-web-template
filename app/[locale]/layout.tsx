@@ -54,7 +54,7 @@ export default async function RootLayout({
           <meta name="google-adsense-account" content={googleAdsenseCode} />
         )}
 
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/humtosong/logo.svg" type="image/svg+xml" />
 
         {locales &&
           locales.map((loc) => (

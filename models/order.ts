@@ -95,61 +95,6 @@ export async function updateOrderStatus(
   return data;
 }
 
-export async function updateOrderSession(
-  order_no: string,
-  stripe_session_id: string,
-  order_detail: string
-) {
-  const supabase = getSupabaseClient();
-  const { data, error } = await supabase
-    .from("orders")
-    .update({ stripe_session_id, order_detail })
-    .eq("order_no", order_no);
-
-  if (error) {
-    throw error;
-  }
-
-  return data;
-}
-
-export async function updateOrderSubscription(
-  order_no: string,
-  sub_id: string,
-  sub_interval_count: number,
-  sub_cycle_anchor: number,
-  sub_period_end: number,
-  sub_period_start: number,
-  status: string,
-  paid_at: string,
-  sub_times: number,
-  paid_email: string,
-  paid_detail: string
-) {
-  const supabase = getSupabaseClient();
-  const { data, error } = await supabase
-    .from("orders")
-    .update({
-      sub_id,
-      sub_interval_count,
-      sub_cycle_anchor,
-      sub_period_end,
-      sub_period_start,
-      status,
-      paid_at,
-      sub_times,
-      paid_email,
-      paid_detail,
-    })
-    .eq("order_no", order_no);
-
-  if (error) {
-    throw error;
-  }
-
-  return data;
-}
-
 export async function getOrdersByUserUuid(
   user_uuid: string
 ): Promise<Order[] | undefined> {

@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "Ship Any AI SaaS Startups in hours | ShipAny",
-    "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups, Ship Fast with a variety of templates and components.",
-    "keywords": "ShipAny, AI SaaS Boilerplate, NextJS Boilerplate"
+    "title": "HumToSong | Identify any song from a hum",
+    "description": "HumToSong delivers fast humming-to-song recognition with ACRCloud accuracy and a polished web experience.",
+    "keywords": "HumToSong, music recognition, humming search, ACRCloud"
   },
   "user": {
     "sign_in": "Sign In",
@@ -11,17 +11,17 @@
     "api_keys": "API Keys",
     "my_orders": "My Orders",
     "user_center": "User Center",
-    "admin_system": "Admin System"
+    "admin_system": "Admin Console"
   },
   "sign_modal": {
     "sign_in_title": "Sign In",
-    "sign_in_description": "Sign in to your account",
-    "sign_up_title": "Sign Up",
-    "sign_up_description": "Create an account",
+    "sign_in_description": "Access your HumToSong account",
+    "sign_up_title": "Create Account",
+    "sign_up_description": "Join the HumToSong beta",
     "email_title": "Email",
-    "email_placeholder": "Input your email here",
+    "email_placeholder": "Enter your email",
     "password_title": "Password",
-    "password_placeholder": "Input your password here",
+    "password_placeholder": "Enter your password",
     "forgot_password": "Forgot password?",
     "or": "Or",
     "continue": "Continue",
@@ -34,13 +34,13 @@
   },
   "my_orders": {
     "title": "My Orders",
-    "description": "orders paid with ShipAny.",
-    "no_orders": "No orders found",
+    "description": "View HumToSong plan purchases.",
+    "no_orders": "No orders yet",
     "tip": "",
     "activate_order": "Activate Order",
     "actived": "Activated",
-    "join_discord": "Join Discord",
-    "read_docs": "Read Docs",
+    "join_discord": "Join Community",
+    "read_docs": "View Docs",
     "table": {
       "order_no": "Order No",
       "email": "Email",
@@ -52,13 +52,13 @@
     }
   },
   "my_credits": {
-    "title": "My Credits",
-    "left_tip": "left credits: {left_credits}",
-    "no_credits": "No credits records",
-    "recharge": "Recharge",
+    "title": "Recognition Usage",
+    "left_tip": "Remaining matches: {left_credits}",
+    "no_credits": "No usage records",
+    "recharge": "Add credits",
     "table": {
-      "trans_no": "Trans No",
-      "trans_type": "Trans Type",
+      "trans_no": "Reference",
+      "trans_type": "Type",
       "credits": "Credits",
       "updated_at": "Updated At",
       "status": "Status"
@@ -66,8 +66,8 @@
   },
   "api_keys": {
     "title": "API Keys",
-    "tip": "Please keep your apikey safe to avoid leaks",
-    "no_api_keys": "No API Keys",
+    "tip": "Keep your key private to protect your integration",
+    "no_api_keys": "No API Keys yet",
     "create_api_key": "Create API Key",
     "table": {
       "name": "Name",
@@ -76,15 +76,15 @@
     },
     "form": {
       "name": "Name",
-      "name_placeholder": "API Key Name",
-      "submit": "Submit"
+      "name_placeholder": "API Key label",
+      "submit": "Generate"
     }
   },
   "blog": {
-    "title": "Blog",
-    "description": "News, resources, and updates about ShipAny",
+    "title": "Updates",
+    "description": "News, resources, and releases from HumToSong",
     "read_more_text": "Read More",
-    "back_to_list": "Back to Blog",
+    "back_to_list": "Back to Updates",
     "back": "Back",
     "anonymous": "Anonymous",
     "recently_published": "Recently published"
@@ -98,28 +98,28 @@
     "video_not_supported": "Your browser does not support video playback"
   },
   "my_invites": {
-    "title": "My Invites",
-    "description": "View your invite records",
-    "no_invites": "No invite records found",
-    "my_invite_link": "My Invite Link",
-    "edit_invite_link": "Edit Invite Link",
-    "copy_invite_link": "Copy Invite Link",
-    "invite_code": "Invite Code",
-    "invite_tip": "Invite 1 friend to buy ShipAny, reward $50.",
-    "invite_balance": "Invite Reward Balance",
-    "total_invite_count": "Total Invite Count",
-    "total_paid_count": "Total Paid Count",
-    "total_award_amount": "Total Award Amount",
-    "update_invite_code": "Set Invite Code",
-    "update_invite_code_tip": "Input your custom invite code",
+    "title": "Referral Program",
+    "description": "Track who you invited to HumToSong",
+    "no_invites": "No referrals yet",
+    "my_invite_link": "My invite link",
+    "edit_invite_link": "Edit invite link",
+    "copy_invite_link": "Copy link",
+    "invite_code": "Invite code",
+    "invite_tip": "Invite a team and earn bonus recognitions.",
+    "invite_balance": "Referral rewards",
+    "total_invite_count": "Total invites",
+    "total_paid_count": "Activated plans",
+    "total_award_amount": "Reward total",
+    "update_invite_code": "Set invite code",
+    "update_invite_code_tip": "Customise your code",
     "update_invite_button": "Save",
-    "no_orders": "You can't invite others before you bought ShipAny",
-    "no_affiliates": "You're not allowed to invite others, please contact us to apply for permission.",
+    "no_orders": "Purchase a plan before sharing invitations",
+    "no_affiliates": "Referrals are disabled for your account. Contact support to request access.",
     "table": {
-      "invite_time": "Invite Time",
-      "invite_user": "Invite User",
+      "invite_time": "Invited At",
+      "invite_user": "User",
       "status": "Status",
-      "reward_percent": "Reward Percent",
+      "reward_percent": "Reward %",
       "reward_amount": "Reward Amount",
       "pending": "Pending",
       "completed": "Completed"
@@ -127,11 +127,11 @@
   },
   "feedback": {
     "title": "Feedback",
-    "description": "We'd love to hear what went well or how we can improve the product experience.",
+    "description": "Tell us how HumToSong is working for you.",
     "submit": "Submit",
     "loading": "Submitting...",
-    "contact_tip": "Other ways to contact us",
-    "rating_tip": "How do you feel about ShipAny?",
-    "placeholder": "Leave your words here..."
+    "contact_tip": "Other ways to reach us",
+    "rating_tip": "How do you feel about HumToSong?",
+    "placeholder": "Share your thoughts..."
   }
 }

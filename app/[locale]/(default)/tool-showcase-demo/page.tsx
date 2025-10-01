@@ -65,13 +65,13 @@ export default async function ToolShowcaseDemoPage({
         },
         buttons: [
           {
-            text: locale === 'zh' ? "立即体验" : "Try Now",
+            title: locale === 'zh' ? "立即体验" : "Try Now",
             url: "/tools/text-generator",
             variant: "default",
             icon: "play"
           },
           {
-            text: locale === 'zh' ? "查看文档" : "View Docs",
+            title: locale === 'zh' ? "查看文档" : "View Docs",
             url: "/docs/text-generator",
             variant: "outline",
             icon: "book"
@@ -112,7 +112,7 @@ export default async function ToolShowcaseDemoPage({
         },
         buttons: [
           {
-            text: locale === 'zh' ? "开始创作" : "Start Creating",
+            title: locale === 'zh' ? "开始创作" : "Start Creating",
             url: "/tools/image-generator",
             variant: "default",
             icon: "image"
@@ -147,13 +147,13 @@ export default async function ToolShowcaseDemoPage({
         },
         buttons: [
           {
-            text: locale === 'zh' ? "体验编码" : "Try Coding",
+            title: locale === 'zh' ? "体验编码" : "Try Coding",
             url: "/tools/code-assistant",
             variant: "default",
             icon: "code"
           },
           {
-            text: locale === 'zh' ? "API 文档" : "API Docs",
+            title: locale === 'zh' ? "API 文档" : "API Docs",
             url: "/docs/api",
             variant: "outline",
             icon: "api"

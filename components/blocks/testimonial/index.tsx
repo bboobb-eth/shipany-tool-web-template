@@ -15,9 +15,7 @@ import { Star } from "lucide-react";
 import { useRef } from "react";
 
 export default function Testimonial({ section }: { section: SectionType }) {
-  if (section.disabled) {
-    return null;
-  }
+  const isDisabled = section.disabled;
 
   const plugin = useRef(
     AutoScroll({
@@ -25,6 +23,10 @@ export default function Testimonial({ section }: { section: SectionType }) {
       speed: 0.7,
     })
   );
+
+  if (isDisabled) {
+    return null;
+  }
 
   return (
     <section id={section.name} className="py-16">
