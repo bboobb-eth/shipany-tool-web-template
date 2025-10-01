@@ -1,78 +1,67 @@
-# HumToSong Web MVP
+# HumToSong Web
 
-HumToSong 提供哼唱识曲与曲目信息服务。本仓库是 Web 端最小可行产品（MVP），基于 Next.js + Supabase + Tailwind 搭建，已精简所有与识曲无关的模板功能，便于继续二次开发。
+HumToSong 的 Web 端以 Next.js 15 构建，并使用 OpenNext + Cloudflare Workers 部署到边缘。项目已收敛为 MVP 所需的最小栈：Next.js App Router、Supabase、Tailwind、Umami，并移除了所有与识曲无关的模板内容。
 
 ![preview](preview.png)
 
-## 开发指南
+## 技术栈
 
-1. **安装依赖**
+- **前端框架**：Next.js 15 (App Router, React 19)
+- **状态 / 数据**：Supabase、NextAuth、next-intl
+- **样式系统**：Tailwind CSS、shadcn/ui 组件
+- **部署目标**：OpenNext 3 + Cloudflare Workers
+- **监控选项**：Umami 或 GA4（二选一）
 
-   ```bash
-   pnpm install
-   ```
-
-2. **启动开发环境**
-
-   ```bash
-   pnpm dev
-   ```
-
-3. **环境变量**
-
-   复制示例文件并补充 ACRCloud 及其他必要配置：
-
-   ```bash
-   cp .env.example .env.local
-   ```
-
-   - `ACR_ACCESS_KEY` / `ACR_ACCESS_SECRET`
-   - `ACR_HOST`
-   - `ACR_META_TOKEN`
-   - `NEXT_PUBLIC_UMAMI_*`（可选监控）
-
-4. **文案与多语言**
-
-   - 登陆页内容：`i18n/pages/landing`
-   - 案例展示：`i18n/pages/showcase`
-   - 通用文案：`i18n/messages`
-
-5. **样式与主题**
-
-   Tailwind 配置位于 `tailwind.config.ts`，可按需更新主题色与组件样式。
-
-## 常用脚本
+## 快速开始
 
 ```bash
-pnpm lint       # ESLint 检查
-pnpm typecheck  # TypeScript 类型检查
-pnpm build      # 生成生产构建
+pnpm install              # 安装依赖
+cp .env.example .env.local # 填写 ACR/Supabase/Analytics 等变量
+pnpm dev                  # 开发模式
 ```
 
-## 部署
+常用开发脚本：
 
-- 推荐：Vercel（默认配置对齐 Next.js）
-- 其他：Cloudflare / 自托管（如不需要可忽略 `wrangler.toml.example`、`Dockerfile`）
+```bash
+pnpm lint       # ESLint
+pnpm typecheck  # TypeScript 检查
+pnpm build      # Next.js 本地生产构建
+pnpm build:cf   # OpenNext 打包 Cloudflare 产物
+pnpm preview:cf # （可选）wrangler 本地模拟
+pnpm deploy:cf  # 部署到 Cloudflare Workers
+```
 
-部署前请确认：
+## 目录速览
 
-- `.env.production` 仅包含必要变量；
-- `pnpm build`、`pnpm lint`、`pnpm typecheck` 通过；
-- 去除或替换所有示例资源（`public/humtosong` 等）。
+- `app/`：App Router 页面与 API
+- `components/`：UI 组件（含 blocks、dashboard 等模块）
+- `i18n/`：多语言资源（landing/showcase 等文案）
+- `services/`：业务逻辑与 Supabase 访问层
+- `types/`：共享类型定义
+- `open-next.config.mjs` / `wrangler.toml`：Cloudflare 构建与部署配置
 
-## 目录概览
+## 环境变量说明
 
-- `app/`：Next.js 应用路由与页面
-- `services/`：API 调用与业务逻辑
-- `components/`：复用的 UI 组件
-- `i18n/`：多语言内容与配置
-- `public/`：静态资源（HumToSong 品牌素材）
+在 `.env.local` 或 Cloudflare Secrets 中设置：
 
-## 反馈与支持
+- **ACRCloud**：`ACR_ACCESS_KEY`、`ACR_ACCESS_SECRET`、`ACR_HOST`、`ACR_META_TOKEN`
+- **Supabase**：`SUPABASE_URL`、`SUPABASE_ANON_KEY`、`SALTED_HASH_SECRET`
+- **Analytics (可选)**：`NEXT_PUBLIC_UMAMI_SCRIPT_URL`、`NEXT_PUBLIC_UMAMI_WEBSITE_ID` 或 `NEXT_PUBLIC_GA_ID`
 
-- 产品或商务合作：`hello@humtosong.com`
-- Bug / 需求：提 Issue 或合并请求
+## 部署流程（Cloudflare）
 
-## License
+1. 确认命令通过：`pnpm lint && pnpm typecheck && pnpm build:cf`
+2. Cloudflare Dashboard → 添加环境变量（同 `.env.example`）
+3. 本地或 CI 执行：`pnpm deploy:cf`
+4. 访问 Cloudflare Pages/Workers 预览与生产环境验证
 
-- [HumToSong MVP License](LICENSE)
+## 后续开发方向
+
+- `/app/api/hum/route.ts`：接入 ACRCloud 识别逻辑
+- `useHumRecorder`：实现前端录音与上传流程
+- Supabase `hum_logs`：记录识别请求与状态
+- 结果卡片 UI：呈现识别结果、历史记录
+
+## 许可证
+
+[HumToSong MVP License](LICENSE)
